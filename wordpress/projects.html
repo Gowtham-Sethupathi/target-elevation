@@ -1,0 +1,176 @@
+<!-- TARGET ELEVATION - PROJECTS PAGE
+ Scoped <style> per section, no header/footer. Every image is an <img>: change src later.
+ Client logos currently hotlink leadfunnelmedia.com. Download them and host on your own server, then update each src. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<section class="tep-hero">
+<style>
+.tep-hero{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;box-sizing:border-box}
+.tep-hero{position:relative;overflow:hidden;padding:80px 5%;background:radial-gradient(circle at 90% 15%,rgba(46,164,79,.2),transparent 45%),radial-gradient(circle at 0 90%,rgba(22,122,53,.12),transparent 38%),#fff}
+.tep-hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(22,122,53,.18) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:linear-gradient(90deg,transparent,#000);mask-image:linear-gradient(90deg,transparent,#000)}
+.tep-hero .in{position:relative;max-width:1200px;margin:auto;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.tep-hero .tag{display:inline-flex;background:#e7f5ea;color:#167a35;font-weight:600;font-size:13px;letter-spacing:1.5px;padding:6px 14px;border-radius:30px;margin:0 0 16px;animation:tep-u .8s both}
+.tep-hero h1{font-size:clamp(32px,4.4vw,52px);line-height:1.12;font-weight:700;letter-spacing:-1px;color:#0d2b17;margin:0 0 18px;animation:tep-u .8s .1s both}
+.tep-hero h1 span{display:block;background:linear-gradient(90deg,#167a35,#3cc062);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tep-hero p.d{font-size:16px;line-height:1.7;max-width:540px;margin:0 0 26px;animation:tep-u .8s .2s both}
+.tep-hero .pills{display:flex;gap:12px;flex-wrap:wrap;animation:tep-u .8s .3s both}
+.tep-hero .p{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:30px;background:#fff;border:1.5px solid #cfe6d4;color:#0d2b17;font-weight:600;font-size:14px;text-decoration:none;transition:.3s}
+.tep-hero .p:hover{background:linear-gradient(135deg,#1a9040,#0f5a28);color:#fff;border-color:transparent;transform:translateY(-4px);box-shadow:0 10px 22px rgba(22,122,53,.3)}
+.tep-hero .vis{position:relative;animation:tep-u 1s .3s both}
+.tep-hero .pic{width:100%;height:380px;object-fit:cover;display:block;border:6px solid #fff;border-radius:22px;box-shadow:0 30px 60px rgba(0,0,0,.2);animation:tep-f 6s ease-in-out infinite}
+.tep-hero .fc{position:absolute;background:#fff;border-radius:14px;padding:12px 18px;font-size:13px;font-weight:600;box-shadow:0 12px 28px rgba(0,0,0,.15);animation:tep-f 5s ease-in-out infinite}
+.tep-hero .fc small{display:block;color:#167a35;font-size:17px;font-weight:700}
+.tep-hero .fc1{left:-24px;top:34px}.tep-hero .fc2{right:-14px;bottom:30px;animation-delay:1s}
+@keyframes tep-u{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes tep-f{50%{transform:translateY(-12px)}}
+@media(max-width:900px){.tep-hero .in{grid-template-columns:1fr}.tep-hero .fc1{left:8px}.tep-hero .fc2{right:8px}}
+.tep-hero *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tep-hero:not(.te-in) *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.tep-hero *{animation:none!important}}
+</style>
+<div class="in"><div>
+<p class="tag">OUR GLOBAL PROJECTS</p>
+<h1>Trusted by Businesses <span>Across Markets.</span></h1>
+<p class="d">Our work spans multiple markets, industries and business environments. Explore the brands we’ve helped grow across India, the USA, the UAE and Saudi Arabia.</p>
+<div class="pills"><a class="p" href="#india-projects"><img src="https://flagcdn.com/w40/in.png" width="22" height="16" alt="" style="border-radius:3px"> India</a><a class="p" href="#usa-projects"><img src="https://flagcdn.com/w40/us.png" width="22" height="16" alt="" style="border-radius:3px"> USA</a><a class="p" href="#middle-east-projects"><img src="https://flagcdn.com/w40/ae.png" width="22" height="16" alt="" style="border-radius:3px"><img src="https://flagcdn.com/w40/sa.png" width="22" height="16" alt="" style="border-radius:3px"> UAE &amp; Saudi Arabia</a></div></div>
+<div class="vis"><img class="pic" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900&h=700&fit=crop" width="900" height="700" alt="Target Elevation team at work">
+<div class="fc fc1"><small>4 Markets</small>One Growth Partner</div><div class="fc fc2"><small>20+ Brands</small>Trusted Clients</div></div></div>
+<script>(function(){var s=document.currentScript.parentElement;if(!("IntersectionObserver" in window)){s.classList.add("te-in");return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add("te-in");o.disconnect()}})},{threshold:.1}).observe(s)})();</script>
+</section>
+<section class="tep-in" id="india-projects">
+<style>
+.tep-in{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;box-sizing:border-box}
+.tep-in .tag{display:inline-flex;align-items:center;gap:8px;background:#e7f5ea;color:#167a35;font-weight:600;font-size:13px;letter-spacing:1.5px;padding:6px 14px;border-radius:30px;margin:0 0 12px}
+.tep-in h2{font-size:clamp(24px,3vw,34px);letter-spacing:-.5px;color:#0d2b17;margin:0 0 8px;font-weight:700}
+.tep-in .sub{color:#4a5a50;line-height:1.7;max-width:640px;margin:0 0 26px}
+.tep-in .tag,.tep-in h2,.tep-in .sub{animation:tep-in-rv .8s both}.tep-in h2{animation-delay:.1s}.tep-in .sub{animation-delay:.2s}
+@keyframes tep-in-rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.tep-in .in{max-width:1200px;margin:auto;padding:0 5%}
+/* Each logo = link. Change href and the img src (170 x 90 recommended) */
+.tep-in .l{flex:none;display:flex;align-items:center;justify-content:center;width:200px;height:104px;margin-right:16px;padding:12px;background:#fff;border:1px solid #e3efe6;border-radius:16px;box-shadow:0 4px 18px rgba(13,43,23,.06);transition:.35s;position:relative;overflow:hidden}
+.tep-in .l:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,#167a35,#7bd18f);transform:scaleX(0);transform-origin:left;transition:.4s}
+.tep-in .l:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(22,122,53,.2);border-color:#167a35}
+.tep-in .l:hover:before{transform:scaleX(1)}
+.tep-in .l img{max-width:100%;max-height:100%;object-fit:contain;transition:.4s}
+.tep-in .l:hover img{transform:scale(1.08)}
+.tep-in .mq{overflow:hidden;padding:8px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.tep-in .tr{display:flex;width:max-content;animation:tep-in-sl 40s linear infinite}
+.tep-in .tr.rev{animation-direction:reverse}
+.tep-in .mq:hover .tr{animation-play-state:paused}
+@keyframes tep-in-sl{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.tep-in .mq{overflow-x:auto}}
+.tep-in{background:linear-gradient(#fff,#f4faf5);padding:60px 0 50px}
+.tep-in .hd{display:flex;align-items:center;gap:16px;margin-bottom:6px}
+.tep-in .fl{font-size:34px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;background:#eaf6ed;border-radius:16px;animation:tep-in-pop .8s both}
+@keyframes tep-in-pop{from{opacity:0;transform:scale(.6) rotate(-12deg)}to{opacity:1;transform:none}}
+.tep-in .hd h2{margin:0}
+.tep-in *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tep-in:not(.te-in) *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.tep-in *{animation:none!important}}
+.tep-in .l.dk{background:linear-gradient(135deg,#0d3d1c,#167a35);border-color:#0d3d1c}
+.tep-in .l.dk:hover{box-shadow:0 18px 34px rgba(13,61,28,.4)}
+</style>
+<div class="in"><div class="hd"><span class="fl"><img src="https://flagcdn.com/w80/in.png" width="40" height="30" alt="India flag" style="border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,.2)"></span><div><h2>India</h2></div></div><p class="sub">Client Projects</p></div><div class="mq"><div class="tr" style="animation-duration:40s"><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-73.png" width="170" height="90" loading="lazy" alt="India client logo 01"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-75.png" width="170" height="90" loading="lazy" alt="India client logo 02"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-84.png" width="170" height="90" loading="lazy" alt="India client logo 03"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/brainobrain_300px_per_cm.png" width="170" height="90" loading="lazy" alt="India client logo 04"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-72.png" width="170" height="90" loading="lazy" alt="India client logo 05"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-93.png" width="170" height="90" loading="lazy" alt="India client logo 06"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-94.png" width="170" height="90" loading="lazy" alt="India client logo 07"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-98.png" width="170" height="90" loading="lazy" alt="India client logo 08"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/Untitled-1-1.png" width="170" height="90" loading="lazy" alt="India client logo 09"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-73.png" width="170" height="90" loading="lazy" alt="India client logo 01"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-75.png" width="170" height="90" loading="lazy" alt="India client logo 02"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-84.png" width="170" height="90" loading="lazy" alt="India client logo 03"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/brainobrain_300px_per_cm.png" width="170" height="90" loading="lazy" alt="India client logo 04"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-72.png" width="170" height="90" loading="lazy" alt="India client logo 05"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-93.png" width="170" height="90" loading="lazy" alt="India client logo 06"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-94.png" width="170" height="90" loading="lazy" alt="India client logo 07"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-98.png" width="170" height="90" loading="lazy" alt="India client logo 08"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/Untitled-1-1.png" width="170" height="90" loading="lazy" alt="India client logo 09"></a></div></div><div class="mq"><div class="tr rev" style="animation-duration:46s"><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-91.png" width="170" height="90" loading="lazy" alt="India client logo 01"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-92.png" width="170" height="90" loading="lazy" alt="India client logo 02"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-89.png" width="170" height="90" loading="lazy" alt="India client logo 03"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-97.png" width="170" height="90" loading="lazy" alt="India client logo 04"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-99.png" width="170" height="90" loading="lazy" alt="India client logo 05"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-96.png" width="170" height="90" loading="lazy" alt="India client logo 06"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-95.png" width="170" height="90" loading="lazy" alt="India client logo 07"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/10/Agasthya-School-Logo.png" width="170" height="90" loading="lazy" alt="India client logo 08"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-91.png" width="170" height="90" loading="lazy" alt="India client logo 01"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-92.png" width="170" height="90" loading="lazy" alt="India client logo 02"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-89.png" width="170" height="90" loading="lazy" alt="India client logo 03"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-97.png" width="170" height="90" loading="lazy" alt="India client logo 04"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-99.png" width="170" height="90" loading="lazy" alt="India client logo 05"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-96.png" width="170" height="90" loading="lazy" alt="India client logo 06"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-95.png" width="170" height="90" loading="lazy" alt="India client logo 07"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/10/Agasthya-School-Logo.png" width="170" height="90" loading="lazy" alt="India client logo 08"></a></div></div>
+<script>(function(){var s=document.currentScript.parentElement;if(!("IntersectionObserver" in window)){s.classList.add("te-in");return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add("te-in");o.disconnect()}})},{threshold:.1}).observe(s)})();</script>
+<script>/* Auto: logos that are mostly white get a dark card. To force it manually, add class "dk" to the <a class="l"> */(function(){var s=document.currentScript.parentElement;s.querySelectorAll(".l img").forEach(function(im){var t=new Image();t.crossOrigin="anonymous";t.onload=function(){try{var w=40,h=Math.max(1,Math.round(w*t.naturalHeight/t.naturalWidth)),c=document.createElement("canvas");c.width=w;c.height=h;var x=c.getContext("2d");x.drawImage(t,0,0,w,h);var d=x.getImageData(0,0,w,h).data,n=0,lt=0,tr=0,p=d.length/4;for(var i=0;i<d.length;i+=4){if(d[i+3]<40){tr++}else{n++;if(d[i]*.299+d[i+1]*.587+d[i+2]*.114>215)lt++}}if(tr/p>.05&&n>15&&lt/n>.45)im.parentNode.classList.add("dk")}catch(e){}};t.src=im.src})})();</script>
+</section>
+<section class="tep-us" id="usa-projects">
+<style>
+.tep-us{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;box-sizing:border-box}
+.tep-us .tag{display:inline-flex;align-items:center;gap:8px;background:#e7f5ea;color:#167a35;font-weight:600;font-size:13px;letter-spacing:1.5px;padding:6px 14px;border-radius:30px;margin:0 0 12px}
+.tep-us h2{font-size:clamp(24px,3vw,34px);letter-spacing:-.5px;color:#0d2b17;margin:0 0 8px;font-weight:700}
+.tep-us .sub{color:#4a5a50;line-height:1.7;max-width:640px;margin:0 0 26px}
+.tep-us .tag,.tep-us h2,.tep-us .sub{animation:tep-us-rv .8s both}.tep-us h2{animation-delay:.1s}.tep-us .sub{animation-delay:.2s}
+@keyframes tep-us-rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.tep-us .in{max-width:1200px;margin:auto;padding:0 5%}
+/* Each logo = link. Change href and the img src (170 x 90 recommended) */
+.tep-us .l{flex:none;display:flex;align-items:center;justify-content:center;width:200px;height:104px;margin-right:16px;padding:12px;background:#fff;border:1px solid #e3efe6;border-radius:16px;box-shadow:0 4px 18px rgba(13,43,23,.06);transition:.35s;position:relative;overflow:hidden}
+.tep-us .l:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,#167a35,#7bd18f);transform:scaleX(0);transform-origin:left;transition:.4s}
+.tep-us .l:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(22,122,53,.2);border-color:#167a35}
+.tep-us .l:hover:before{transform:scaleX(1)}
+.tep-us .l img{max-width:100%;max-height:100%;object-fit:contain;transition:.4s}
+.tep-us .l:hover img{transform:scale(1.08)}
+.tep-us .mq{overflow:hidden;padding:8px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.tep-us .tr{display:flex;width:max-content;animation:tep-us-sl 40s linear infinite}
+.tep-us .tr.rev{animation-direction:reverse}
+.tep-us .mq:hover .tr{animation-play-state:paused}
+@keyframes tep-us-sl{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.tep-us .mq{overflow-x:auto}}
+.tep-us .grid{display:grid;gap:16px}.tep-us .grid .l{width:auto;margin:0;animation:tep-us-up .7s both}
+.tep-us .grid .l:nth-child(2){animation-delay:.1s}.tep-us .grid .l:nth-child(3){animation-delay:.2s}.tep-us .grid .l:nth-child(4){animation-delay:.3s}
+@keyframes tep-us-up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.tep-us{background:#fff;padding:60px 0}
+.tep-us .grid{grid-template-columns:repeat(4,1fr)}.tep-us .grid .l{height:120px}
+.tep-us .fl{font-size:34px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;background:#eaf6ed;border-radius:16px;margin-bottom:12px}
+@media(max-width:800px){.tep-us .grid{grid-template-columns:repeat(2,1fr)}}
+.tep-us *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tep-us:not(.te-in) *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.tep-us *{animation:none!important}}
+.tep-us .l.dk{background:linear-gradient(135deg,#0d3d1c,#167a35);border-color:#0d3d1c}
+.tep-us .l.dk:hover{box-shadow:0 18px 34px rgba(13,61,28,.4)}
+</style>
+<div class="in"><span class="fl"><img src="https://flagcdn.com/w80/us.png" width="40" height="30" alt="USA flag" style="border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,.2)"></span><h2>USA</h2><p class="sub">Client Projects</p><div class="grid"><a class="l dk"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-2026-08-21T203912.610.png" width="170" height="90" loading="lazy" alt="USA client logo 01"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-2026-08-21T203940.951.png" width="170" height="90" loading="lazy" alt="USA client logo 02"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-100.png" width="170" height="90" loading="lazy" alt="USA client logo 03"></a><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-2026-08-21T204024.041.png" width="170" height="90" loading="lazy" alt="USA client logo 04"></a></div></div>
+<script>(function(){var s=document.currentScript.parentElement;if(!("IntersectionObserver" in window)){s.classList.add("te-in");return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add("te-in");o.disconnect()}})},{threshold:.1}).observe(s)})();</script>
+<script>/* Auto: logos that are mostly white get a dark card. To force it manually, add class "dk" to the <a class="l"> */(function(){var s=document.currentScript.parentElement;s.querySelectorAll(".l img").forEach(function(im){var t=new Image();t.crossOrigin="anonymous";t.onload=function(){try{var w=40,h=Math.max(1,Math.round(w*t.naturalHeight/t.naturalWidth)),c=document.createElement("canvas");c.width=w;c.height=h;var x=c.getContext("2d");x.drawImage(t,0,0,w,h);var d=x.getImageData(0,0,w,h).data,n=0,lt=0,tr=0,p=d.length/4;for(var i=0;i<d.length;i+=4){if(d[i+3]<40){tr++}else{n++;if(d[i]*.299+d[i+1]*.587+d[i+2]*.114>215)lt++}}if(tr/p>.05&&n>15&&lt/n>.45)im.parentNode.classList.add("dk")}catch(e){}};t.src=im.src})})();</script>
+</section>
+<section class="tep-me" id="middle-east-projects">
+<style>
+.tep-me{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;box-sizing:border-box}
+.tep-me .tag{display:inline-flex;align-items:center;gap:8px;background:#e7f5ea;color:#167a35;font-weight:600;font-size:13px;letter-spacing:1.5px;padding:6px 14px;border-radius:30px;margin:0 0 12px}
+.tep-me h2{font-size:clamp(24px,3vw,34px);letter-spacing:-.5px;color:#0d2b17;margin:0 0 8px;font-weight:700}
+.tep-me .sub{color:#4a5a50;line-height:1.7;max-width:640px;margin:0 0 26px}
+.tep-me .tag,.tep-me h2,.tep-me .sub{animation:tep-me-rv .8s both}.tep-me h2{animation-delay:.1s}.tep-me .sub{animation-delay:.2s}
+@keyframes tep-me-rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.tep-me .in{max-width:1200px;margin:auto;padding:0 5%}
+/* Each logo = link. Change href and the img src (170 x 90 recommended) */
+.tep-me .l{flex:none;display:flex;align-items:center;justify-content:center;width:200px;height:104px;margin-right:16px;padding:12px;background:#fff;border:1px solid #e3efe6;border-radius:16px;box-shadow:0 4px 18px rgba(13,43,23,.06);transition:.35s;position:relative;overflow:hidden}
+.tep-me .l:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,#167a35,#7bd18f);transform:scaleX(0);transform-origin:left;transition:.4s}
+.tep-me .l:hover{transform:translateY(-6px);box-shadow:0 18px 34px rgba(22,122,53,.2);border-color:#167a35}
+.tep-me .l:hover:before{transform:scaleX(1)}
+.tep-me .l img{max-width:100%;max-height:100%;object-fit:contain;transition:.4s}
+.tep-me .l:hover img{transform:scale(1.08)}
+.tep-me .mq{overflow:hidden;padding:8px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.tep-me .tr{display:flex;width:max-content;animation:tep-me-sl 40s linear infinite}
+.tep-me .tr.rev{animation-direction:reverse}
+.tep-me .mq:hover .tr{animation-play-state:paused}
+@keyframes tep-me-sl{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.tep-me .mq{overflow-x:auto}}
+.tep-me .grid{display:grid;gap:16px}.tep-me .grid .l{width:auto;margin:0;animation:tep-me-up .7s both}
+.tep-me .grid .l:nth-child(2){animation-delay:.1s}.tep-me .grid .l:nth-child(3){animation-delay:.2s}.tep-me .grid .l:nth-child(4){animation-delay:.3s}
+@keyframes tep-me-up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.tep-me{background:linear-gradient(#f4faf5,#fff);padding:60px 0}
+.tep-me .grid{grid-template-columns:repeat(4,1fr)}.tep-me .grid .l{height:120px}
+.tep-me .fl{font-size:34px;height:60px;padding:0 16px;display:inline-flex;align-items:center;gap:6px;background:#eaf6ed;border-radius:16px;margin-bottom:12px}
+@media(max-width:800px){.tep-me .grid{grid-template-columns:repeat(2,1fr)}}
+.tep-me *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tep-me:not(.te-in) *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.tep-me *{animation:none!important}}
+.tep-me .l.dk{background:linear-gradient(135deg,#0d3d1c,#167a35);border-color:#0d3d1c}
+.tep-me .l.dk:hover{box-shadow:0 18px 34px rgba(13,61,28,.4)}
+</style>
+<div class="in"><span class="fl"><img src="https://flagcdn.com/w80/ae.png" width="36" height="27" alt="UAE flag" style="border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,.2)"><img src="https://flagcdn.com/w80/sa.png" width="36" height="27" alt="Saudi Arabia flag" style="border-radius:4px;box-shadow:0 2px 6px rgba(0,0,0,.2)"></span><h2>UAE &amp; Saudi Arabia</h2><p class="sub">Client Project</p><div class="grid"><a class="l"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/brainobrain_300px_per_cm.png" width="170" height="90" loading="lazy" alt="UAE and Saudi Arabia client logo 01"></a></div></div>
+<script>(function(){var s=document.currentScript.parentElement;if(!("IntersectionObserver" in window)){s.classList.add("te-in");return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add("te-in");o.disconnect()}})},{threshold:.1}).observe(s)})();</script>
+<script>/* Auto: logos that are mostly white get a dark card. To force it manually, add class "dk" to the <a class="l"> */(function(){var s=document.currentScript.parentElement;s.querySelectorAll(".l img").forEach(function(im){var t=new Image();t.crossOrigin="anonymous";t.onload=function(){try{var w=40,h=Math.max(1,Math.round(w*t.naturalHeight/t.naturalWidth)),c=document.createElement("canvas");c.width=w;c.height=h;var x=c.getContext("2d");x.drawImage(t,0,0,w,h);var d=x.getImageData(0,0,w,h).data,n=0,lt=0,tr=0,p=d.length/4;for(var i=0;i<d.length;i+=4){if(d[i+3]<40){tr++}else{n++;if(d[i]*.299+d[i+1]*.587+d[i+2]*.114>215)lt++}}if(tr/p>.05&&n>15&&lt/n>.45)im.parentNode.classList.add("dk")}catch(e){}};t.src=im.src})})();</script>
+</section>
+<section class="tep-cta">
+<style>
+.tep-cta{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;box-sizing:border-box}
+.tep-cta{position:relative;overflow:hidden;background:linear-gradient(120deg,#082f15,#145c2c);color:#fff;padding:90px 5%}
+.tep-cta .bg{position:absolute;right:0;top:0;width:55%;height:100%;object-fit:cover;opacity:.85;-webkit-mask-image:linear-gradient(90deg,transparent,#000 45%);mask-image:linear-gradient(90deg,transparent,#000 45%);animation:tep-z 14s ease-in-out infinite alternate}
+.tep-cta .in{position:relative;max-width:1200px;margin:auto}
+.tep-cta .tag{font-weight:600;font-size:13px;letter-spacing:1.5px;margin:0 0 10px;color:#bfe8c8;animation:tep-cu .8s both}
+.tep-cta h2{font-size:clamp(24px,3.2vw,36px);line-height:1.25;margin:0 0 14px;max-width:520px;font-weight:700;animation:tep-cu .8s .1s both}
+.tep-cta p.d{max-width:480px;line-height:1.7;margin:0 0 22px;color:#d6efdc;animation:tep-cu .8s .15s both}
+.tep-cta .b{display:inline-block;background:linear-gradient(135deg,#34b85a,#1f8a3d);color:#fff;padding:14px 28px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;transition:.3s;animation:tep-cu .8s .2s both,tep-pl 2.4s 1s infinite}
+.tep-cta .b:hover{background:#fff;color:#0f4a22;transform:translateY(-3px)}
+@keyframes tep-cu{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes tep-z{to{transform:scale(1.07)}}
+@keyframes tep-pl{0%{box-shadow:0 0 0 0 rgba(46,164,79,.6)}70%,100%{box-shadow:0 0 0 16px rgba(46,164,79,0)}}
+@media(max-width:700px){.tep-cta .bg{width:100%;opacity:.3}}
+.tep-cta *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tep-cta:not(.te-in) *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.tep-cta *{animation:none!important}}
+</style>
+<img class="bg" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1100&h=500&fit=crop" width="1100" height="500" alt="Corporate building"><div class="in"><p class="tag">READY TO ELEVATE?</p><h2>Your Brand Could Be Our Next Success Story.</h2><p class="d">Ready to make your business stand out? Let’s talk about your next digital growth opportunity.</p><a class="b" href="/contact-us/">Start a Conversation →</a></div>
+<script>(function(){var s=document.currentScript.parentElement;if(!("IntersectionObserver" in window)){s.classList.add("te-in");return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add("te-in");o.disconnect()}})},{threshold:.1}).observe(s)})();</script>
+</section>

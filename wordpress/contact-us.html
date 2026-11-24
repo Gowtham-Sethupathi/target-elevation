@@ -1,0 +1,144 @@
+<!-- TARGET ELEVATION - CONTACT US PAGE (3 sections, no map). Paste ALL of this into ONE Elementor HTML widget (not the Customizer). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ===== SECTION 1: HERO ===== -->
+<section class="tec-hero">
+<style>
+.tec-hero,.tec-hero *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tec-hero{position:relative;overflow:hidden;font-size:15px;color:#1b2b20;padding:80px 5% 70px;background:radial-gradient(circle at 90% 20%,rgba(46,164,79,.2),transparent 45%),radial-gradient(circle at 0 90%,rgba(22,122,53,.12),transparent 38%),#fff}
+.tec-hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(22,122,53,.18) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:linear-gradient(90deg,transparent,#000);mask-image:linear-gradient(90deg,transparent,#000)}
+.tec-hero .in{position:relative;max-width:1200px;margin:auto;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.tec-hero .tag{display:inline-flex;background:#e7f5ea;color:#167a35;font-weight:600;font-size:13px;letter-spacing:1.5px;padding:6px 14px;border-radius:30px;margin:0 0 16px;animation:tec-u .8s both}
+.tec-hero h1{font-size:clamp(32px,4.4vw,52px);line-height:1.12;font-weight:700;letter-spacing:-1px;color:#0d2b17!important;margin:0 0 18px;animation:tec-u .8s .1s both}
+.tec-hero h1 span{display:block;background:linear-gradient(90deg,#167a35,#3cc062);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.tec-hero p.d{font-size:16px;line-height:1.7;max-width:540px;margin:0 0 24px;color:#2b3d31;animation:tec-u .8s .2s both}
+.tec-hero .pills{display:flex;gap:10px;flex-wrap:wrap;animation:tec-u .8s .3s both}
+.tec-hero .p{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:30px;background:#fff;border:1.5px solid #cfe6d4;font-size:13px;font-weight:600;color:#1b2b20}
+.tec-hero .p img{width:18px;height:18px}
+.tec-hero .vis{position:relative;animation:tec-u 1s .3s both}
+.tec-hero .pic{width:100%;height:340px;object-fit:cover;display:block;border:6px solid #fff;border-radius:22px;box-shadow:0 30px 60px rgba(0,0,0,.2);animation:tec-f 6s ease-in-out infinite}
+.tec-hero .fc{position:absolute;left:-22px;bottom:30px;background:#fff;border-radius:14px;padding:12px 18px;font-size:13px;font-weight:600;color:#1b2b20;box-shadow:0 12px 28px rgba(0,0,0,.15);animation:tec-f 5s 1s ease-in-out infinite}
+.tec-hero .fc small{display:block;color:#167a35;font-size:15px;font-weight:700}
+@keyframes tec-u{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes tec-f{50%{transform:translateY(-12px)}}
+@media(max-width:900px){.tec-hero .in{grid-template-columns:1fr}.tec-hero .fc{left:10px}}
+@media(prefers-reduced-motion:reduce){.tec-hero *{animation:none!important}}
+</style>
+<div class="in"><div>
+<p class="tag">CONTACT US</p>
+<h1>Let’s Build Your <span>Growth System Together.</span></h1>
+<p class="d">Tell us about your business, your goals and the challenges you want to solve. Our growth team will get back to you with the right next step.</p>
+<div class="pills"><span class="p"><img src="https://api.iconify.design/lucide/zap.svg?color=%23167a35" alt="">Quick Response</span><span class="p"><img src="https://api.iconify.design/lucide/message-circle.svg?color=%23167a35" alt="">Free Consultation</span><span class="p"><img src="https://api.iconify.design/lucide/trending-up.svg?color=%23167a35" alt="">Growth-Focused Advice</span></div></div>
+<div class="vis"><img class="pic" src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=900&h=700&fit=crop" width="900" height="700" alt="Talk to the Target Elevation team"><div class="fc"><small>Talk to a Growth Expert</small>We reply within one business day</div></div></div>
+</section>
+
+<!-- ===== SECTION 2: CONTACT DETAILS + FORM ===== -->
+<section class="tec-main">
+<style>
+.tec-main,.tec-main *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tec-main{font-size:15px;color:#1b2b20;background:linear-gradient(#fff,#f4faf5);padding:60px 5%}
+.tec-main .in{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1.25fr;gap:28px}
+.tec-main .tag{display:inline-flex;background:#e7f5ea;color:#167a35;font-weight:600;font-size:13px;letter-spacing:1.5px;padding:6px 14px;border-radius:30px;margin:0 0 12px}
+.tec-main h2{font-size:clamp(24px,3vw,32px);letter-spacing:-.5px;color:#0d2b17!important;margin:0 0 8px;font-weight:700}
+.tec-main .sub{color:#4a5a50;line-height:1.7;margin:0 0 20px}
+.tec-main .ic{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #e3efe6;border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 4px 18px rgba(13,43,23,.06);transition:.35s;animation:tec-m .8s both}
+.tec-main .ic.b{animation-delay:.12s}.tec-main .ic.c{animation-delay:.24s}
+.tec-main .ic:hover{transform:translateY(-5px);border-color:#167a35;box-shadow:0 16px 30px rgba(22,122,53,.16)}
+.tec-main .ic>img{flex:none;padding:11px;background:#eaf6ed;border-radius:14px;transition:.4s}
+.tec-main .ic:hover>img{transform:rotate(-8deg) scale(1.1)}
+.tec-main .ic span{font-size:13px;font-weight:600;color:#167a35;letter-spacing:1px;text-transform:uppercase}
+.tec-main .ic b{display:block;font-size:15px;margin:2px 0 4px;color:#0d2b17}
+.tec-main .ic p{margin:0;font-size:14px;line-height:1.7;color:#3d4f43}
+.tec-main .ic a{color:inherit;text-decoration:none}.tec-main .ic a:hover{color:#167a35}
+.tec-main .fol{margin-top:20px}.tec-main .fol h4{margin:0 0 6px;font-size:15px;color:#0d2b17}.tec-main .fol p{margin:0 0 12px;font-size:13px;color:#4a5a50;line-height:1.6}
+.tec-main .soc{display:flex;gap:10px}
+.tec-main .soc a{width:44px;height:44px;border-radius:12px;background:#fff;border:1px solid #e3efe6;display:flex;align-items:center;justify-content:center;transition:.3s}
+.tec-main .soc a:hover{transform:translateY(-5px);background:#167a35;border-color:#167a35}
+.tec-main .soc img{width:20px;height:20px;transition:.3s}.tec-main .soc a:hover img{filter:brightness(0) invert(1)}
+.tec-main form{position:relative;overflow:hidden;background:#fff;border:1px solid #e3efe6;border-radius:20px;padding:30px;box-shadow:0 20px 50px rgba(13,43,23,.1);animation:tec-m .9s .15s both}
+.tec-main form:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,#167a35,#7bd18f)}
+.tec-main form h3{margin:0 0 4px;font-size:17px;color:#0d2b17}.tec-main form>p{margin:0 0 18px;font-size:13px;color:#4a5a50}
+.tec-main .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.tec-main label{display:block;font-size:13px;font-weight:600;margin:0 0 6px;color:#1b2b20}
+.tec-main .f{margin-bottom:14px}
+.tec-main input,.tec-main select,.tec-main textarea{display:block;width:100%;margin:0;padding:13px 14px;font-size:14px;line-height:1.4;height:auto;border:1.5px solid #dcebdf;border-radius:10px;background:#fbfdfb;color:#1b2b20;outline:none;box-shadow:none;transition:.25s}
+.tec-main input:focus,.tec-main select:focus,.tec-main textarea:focus{border-color:#167a35;box-shadow:0 0 0 4px rgba(22,122,53,.12);background:#fff}
+.tec-main textarea{min-height:120px;resize:vertical}
+.tec-main .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.tec-main button{display:block;width:100%;padding:15px;border:0;border-radius:10px;background:linear-gradient(135deg,#1a9040,#0f5a28);color:#fff;font-weight:600;font-size:15px;cursor:pointer;box-shadow:0 8px 22px rgba(22,122,53,.3);transition:.3s}
+.tec-main button:hover{transform:translateY(-3px)}
+.tec-main button:disabled{opacity:.7;cursor:wait;transform:none}
+.tec-main .err{display:none;margin-top:14px;padding:12px 14px;border-radius:10px;background:#fdecec;color:#a12626;font-size:14px;text-align:center}
+@keyframes tec-m{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@media(max-width:900px){.tec-main .in{grid-template-columns:1fr}.tec-main .row{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.tec-main *{animation:none!important}}
+</style>
+<div class="in"><div>
+<p class="tag">GET IN TOUCH</p><h2>We’d Love to Hear From You.</h2><p class="sub">Reach us through any of the channels below or send us a message using the form.</p>
+<div class="ic"><img src="https://api.iconify.design/lucide/map-pin.svg?color=%23167a35" width="48" height="48" alt=""><div><span>Contact Us</span><b>Head Office</b><p>Chennai, Tamil Nadu, India</p></div></div>
+<div class="ic b"><img src="https://api.iconify.design/lucide/phone.svg?color=%23167a35" width="48" height="48" alt=""><div><span>Get In Touch</span><b>Phone &amp; WhatsApp</b><p><a href="tel:+916379339909">+91 63793 39909</a><br><a href="https://wa.me/916379339909" target="_blank" rel="noopener">Chat on WhatsApp →</a></p></div></div>
+<div class="ic c"><img src="https://api.iconify.design/lucide/mail.svg?color=%23167a35" width="48" height="48" alt=""><div><span>Email Us</span><b>Email</b><p><a href="mailto:targetelevation@gmail.com">targetelevation@gmail.com</a></p></div></div>
+<div class="fol"><h4>Follow Us</h4><p>Stay connected with Target Elevation and follow our latest updates, insights and creative work.</p>
+<div class="soc"><a href="https://www.facebook.com/targetelevation" target="_blank" rel="noopener" title="Facebook"><img src="https://api.iconify.design/logos/facebook.svg" alt="Facebook"></a><a href="https://www.instagram.com/targetelevation/" target="_blank" rel="noopener" title="Instagram"><img src="https://api.iconify.design/logos/instagram-icon.svg" alt="Instagram"></a></div></div></div>
+
+<form class="tec-form" autocomplete="on">
+<h3>Send Us a Message</h3><p>Fill in the details and our team will reach out shortly.</p>
+<input class="hp" type="text" name="hp_field" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="row"><div class="f"><label>Full Name</label><input type="text" name="name" placeholder="Your name" required></div><div class="f"><label>Email Address</label><input type="email" name="email" placeholder="you@company.com" required></div></div>
+<div class="row"><div class="f"><label>Phone Number</label><input type="tel" name="phone" placeholder="+91 XXXXX XXXXX"></div><div class="f"><label>Company Name</label><input type="text" name="company" placeholder="Your company"></div></div>
+<div class="f"><label>Service You Need</label><select name="service"><option value="">Select a service</option><option>Meta Ads</option><option>Google Ads</option><option>Social Media Management</option><option>Content Marketing</option><option>Email Marketing</option><option>LinkedIn Marketing</option><option>AI &amp; Automation</option><option>Search Engine Optimization</option><option>Local SEO</option><option>Website Development</option><option>Mobile App Development</option><option>Sales System Building</option><option>Branding</option><option>Graphic Design</option><option>Video Editing</option><option>Not sure yet</option></select></div>
+<div class="f"><label>Your Message</label><textarea name="message" placeholder="Tell us about your business and goals" required></textarea></div>
+<button type="submit">Talk to a Growth Expert →</button><div class="err">Sorry, something went wrong. Please try again or WhatsApp us on +91 63793 39909.</div></form></div>
+<script>
+(function(){
+ var SHEET_URL="https://script.google.com/macros/s/AKfycbyAhsvn6_pLdc0dyUkfU5G8k-_L5NJc2KMyiFChezMxMtP2ItQld4_0M5SX_h1NpzYrfQ/exec"; /* Apps Script Web App URL */
+ var THANKS="/thank-you-page/"; /* EDIT: your thank-you page URL */
+ function teTrack(){
+  var K="te_track",o=null,q=new URLSearchParams(location.search),h="",s="",u=(q.get("utm_source")||"").toLowerCase(),pg=location.href.split("#")[0];
+  try{o=JSON.parse(localStorage.getItem(K)||"null")}catch(e){}
+  try{h=document.referrer?new URL(document.referrer).hostname:""}catch(e){}
+  if(u)s=/^(face|fb|insta|ig|meta)/.test(u)?"Meta":/^(goog|gads|adwords)/.test(u)?"Google":u.charAt(0).toUpperCase()+u.slice(1);
+  else if(q.get("fbclid"))s="Meta";
+  else if(q.get("gclid")||q.get("gbraid")||q.get("wbraid"))s="Google";
+  else if(/facebook|instagram/.test(h))s="Meta (Organic)";
+  else if(/google\./.test(h))s="Google (Organic)";
+  else if(h&&h.indexOf(location.hostname)<0)s="Other";
+  if(s){o={s:s,c:q.get("utm_campaign")||"",l:pg,t:Date.now()};try{localStorage.setItem(K,JSON.stringify(o))}catch(e){}}
+  return o&&Date.now()-o.t<2592e6?o:{s:"Direct",c:"",l:pg};
+ }
+ var t=teTrack();
+ var f=document.querySelector(".tec-main .tec-form");if(!f)return;
+ var b=f.querySelector("button"),er=f.querySelector(".err");
+ function fail(){b.disabled=false;b.textContent="Talk to a Growth Expert →";er.style.display="block"}
+ f.addEventListener("submit",function(e){
+  e.preventDefault();er.style.display="none";
+  if(f.hp_field.value){location.href=THANKS;return}
+  var d=new URLSearchParams(new FormData(f));d.delete("hp_field");
+  d.append("source",t.s);d.append("campaign",t.c);d.append("landing",t.l);
+  b.disabled=true;b.textContent="Sending…";
+  fetch(SHEET_URL,{method:"POST",body:d}).then(function(r){return r.json()}).then(function(j){if(j&&j.ok)location.href=THANKS;else fail()}).catch(fail);
+ });
+})();
+</script>
+</section>
+
+<!-- ===== SECTION 3: CALL TO ACTION ===== -->
+<section class="tec-cta">
+<style>
+.tec-cta,.tec-cta *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tec-cta{position:relative;overflow:hidden;font-size:15px;background:linear-gradient(120deg,#082f15,#145c2c);color:#fff;padding:90px 5%}
+.tec-cta .bg{position:absolute;right:0;top:0;width:55%;height:100%;object-fit:cover;opacity:.85;-webkit-mask-image:linear-gradient(90deg,transparent,#000 45%);mask-image:linear-gradient(90deg,transparent,#000 45%);animation:tec-z 14s ease-in-out infinite alternate}
+.tec-cta .in{position:relative;max-width:1200px;margin:auto}
+.tec-cta .tag{font-weight:600;font-size:13px;letter-spacing:1.5px;margin:0 0 10px;color:#bfe8c8;animation:tec-cu .8s both}
+.tec-cta h2{font-size:clamp(24px,3.2vw,36px);line-height:1.25;margin:0 0 22px;max-width:520px;font-weight:700;color:#fff!important;animation:tec-cu .8s .1s both}
+.tec-cta .b{display:inline-block;background:linear-gradient(135deg,#34b85a,#1f8a3d);color:#fff;padding:14px 28px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;transition:.3s;animation:tec-cu .8s .2s both,tec-pl 2.4s 1s infinite}
+.tec-cta .b:hover{background:#fff;color:#0f4a22;transform:translateY(-3px)}
+@keyframes tec-cu{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes tec-z{to{transform:scale(1.07)}}
+@keyframes tec-pl{0%{box-shadow:0 0 0 0 rgba(46,164,79,.6)}70%,100%{box-shadow:0 0 0 16px rgba(46,164,79,0)}}
+@media(max-width:700px){.tec-cta .bg{width:100%;opacity:.3}}
+@media(prefers-reduced-motion:reduce){.tec-cta *{animation:none!important}}
+</style>
+<img class="bg" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1100&h=500&fit=crop" width="1100" height="500" alt="Corporate building"><div class="in"><p class="tag">READY TO ELEVATE?</p><h2>Your Next Stage of Growth Starts With the Right System.</h2><a class="b" href="https://wa.me/916379339909" target="_blank" rel="noopener">Talk to a Growth Expert →</a></div>
+</section>

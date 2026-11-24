@@ -1,0 +1,446 @@
+<!-- TARGET ELEVATION - WEBSITE DESIGN & DEVELOPMENT LANDING PAGE (v2)
+ Scoped <style> per section. Images/icons are <img> tags: change src later.
+ All CTAs open WhatsApp (+91 63793 39909) with a pre-filled message. FAQ + contact/form sections removed. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- ============ NAV ============ -->
+<section class="tev-nav" id="top">
+<style>
+.tev-nav{position:sticky;top:var(--te-hd-h,0px);z-index:50;font-family:'Poppins',sans-serif;background:rgba(6,33,15,.82);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);padding:0 5%;box-sizing:border-box}
+.tev-nav *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tev-nav .in{max-width:1200px;margin:auto;height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.tev-nav .lg{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:700;font-size:14px;line-height:1.1;letter-spacing:.6px}
+.tev-nav .lg img{width:42px;height:42px;object-fit:contain;border-radius:50%;background:#fff}
+.tev-nav nav{display:flex;gap:30px}
+.tev-nav nav a{color:#cfe9d6;text-decoration:none;font-size:14px;font-weight:500;position:relative;padding:6px 0;transition:.3s}
+.tev-nav nav a:after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:#3cc062;border-radius:2px;transition:.3s}
+.tev-nav nav a:hover{color:#fff}.tev-nav nav a:hover:after{width:100%}
+.tev-nav .q{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:40px;background:#3cc062;color:#06210f;font-weight:700;font-size:14px;text-decoration:none;transition:.3s;box-shadow:0 8px 24px rgba(60,192,98,.35)}
+.tev-nav .q img{width:18px;height:18px}
+.tev-nav .q:hover{transform:translateY(-2px);background:#5ad57e}
+@media(max-width:900px){.tev-nav nav{display:none}}
+</style>
+<div class="in"><a class="lg" href="#top"><img src="https://targetelevation.in/wp-content/uploads/2026/10/cropped-Minimalist-Green-Circle-TE-Logo.PNG-1-scaled-1.png" width="42" height="42" alt="Target Elevation logo"><span>TARGET<br>ELEVATION</span></a>
+<nav><a href="#why">Why Us</a><a href="#packages">Packages</a><a href="#features">Features</a><a href="#process">Process</a></nav>
+<a class="q" href="https://wa.me/916379339909?text=Hi%20Target%20Elevation%2C%20I%27d%20like%20a%20free%20quote%20for%20a%20website." target="_blank" rel="noopener"><img src="https://api.iconify.design/ic/baseline-whatsapp.svg?color=%2306210f" width="18" height="18" alt="">Free Quote</a></div>
+</section>
+
+<!-- ============ HERO ============ -->
+<section class="tev-hero">
+<style>
+.tev-hero{position:relative;overflow:hidden;font-family:'Poppins',sans-serif;font-size:15px;color:#fff;padding:80px 5% 0;box-sizing:border-box;background:radial-gradient(circle at 80% 15%,rgba(60,192,98,.35),transparent 40%),radial-gradient(circle at 5% 95%,rgba(26,144,64,.35),transparent 40%),#06210f}
+.tev-hero *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tev-hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:48px 48px;-webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000 20%,transparent 70%);mask-image:radial-gradient(ellipse at 70% 40%,#000 20%,transparent 70%)}
+.tev-hero .in{position:relative;max-width:1200px;margin:auto;display:grid;grid-template-columns:1.05fr 1fr;gap:50px;align-items:center}
+.tev-hero .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:40px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font-size:13px;font-weight:500;color:#cfe9d6;margin:0 0 20px;animation:tev-up .8s both}
+.tev-hero .badge i{width:8px;height:8px;border-radius:50%;background:#3cc062;box-shadow:0 0 0 0 rgba(60,192,98,.7);animation:tev-ping 1.8s infinite}
+.tev-hero h1{color:#fff!important;font-size:clamp(34px,4.8vw,58px);line-height:1.08;font-weight:800;letter-spacing:-1.5px;margin:0 0 18px;animation:tev-up .8s .1s both}
+.tev-hero h1 span{background:linear-gradient(90deg,#3cc062,#b8f5c8);-webkit-background-clip:text;background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent}
+.tev-hero .lead{font-size:17px;line-height:1.65;color:#cfe9d6;max-width:520px;margin:0 0 30px;animation:tev-up .8s .2s both}
+.tev-hero .btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px;animation:tev-up .8s .3s both}
+.tev-hero .b1{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:40px;background:#3cc062;color:#06210f;font-weight:700;font-size:15px;text-decoration:none;box-shadow:0 12px 30px rgba(60,192,98,.4);transition:.3s}
+.tev-hero .b1 img{width:20px;height:20px}
+.tev-hero .b1:hover{transform:translateY(-3px);background:#5ad57e}
+.tev-hero .b2{display:inline-flex;align-items:center;padding:16px 28px;border-radius:40px;border:1.5px solid rgba(255,255,255,.3);color:#fff;font-weight:600;font-size:15px;text-decoration:none;transition:.3s}
+.tev-hero .b2:hover{background:#fff;color:#06210f;transform:translateY(-3px)}
+.tev-hero .stats{display:flex;gap:34px;flex-wrap:wrap;animation:tev-up .8s .4s both}
+.tev-hero .stats b{display:block;font-size:26px;font-weight:700;color:#fff;line-height:1.1}
+.tev-hero .stats span{font-size:13px;color:#9fc9aa}
+.tev-hero .vis{position:relative;animation:tev-up 1s .3s both;padding-bottom:30px}
+.tev-hero .win{background:#0f2f1a;border:1px solid rgba(255,255,255,.14);border-radius:16px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.45);animation:tev-float 6s ease-in-out infinite}
+.tev-hero .bar{display:flex;gap:6px;padding:12px 14px;background:rgba(255,255,255,.06)}
+.tev-hero .bar i{width:10px;height:10px;border-radius:50%;background:#ff5f57}.tev-hero .bar i:nth-child(2){background:#febc2e}.tev-hero .bar i:nth-child(3){background:#28c840}
+.tev-hero .win img{display:block;width:100%;height:330px;object-fit:cover}
+.tev-hero .ph{position:absolute;right:-14px;bottom:0;width:120px;height:236px;object-fit:cover;border:5px solid #0b1f12;border-radius:24px;box-shadow:0 24px 50px rgba(0,0,0,.5);animation:tev-float 5s 1s ease-in-out infinite}
+.tev-hero .chip{position:absolute;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.95);color:#0d2b17;font-size:13px;font-weight:600;box-shadow:0 16px 36px rgba(0,0,0,.3);animation:tev-float 5.5s ease-in-out infinite}
+.tev-hero .chip img{width:30px;height:30px;padding:6px;border-radius:9px;background:#e7f5ea}
+.tev-hero .chip small{display:block;font-size:13px;font-weight:400;color:#4a5a50}
+.tev-hero .c1{left:-30px;top:70px;animation-delay:.5s}.tev-hero .c2{left:20px;bottom:6px;animation-delay:1.5s}
+.tev-hero .tick{position:relative;margin:70px -5% 0;border-top:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);overflow:hidden;padding:18px 0}
+.tev-hero .track{display:flex;gap:46px;width:max-content;animation:tev-mq 28s linear infinite}
+.tev-hero .track span{display:flex;align-items:center;gap:46px;white-space:nowrap;font-size:15px;font-weight:600;color:#cfe9d6;letter-spacing:.5px}
+.tev-hero .track span:after{content:"✦";color:#3cc062}
+@keyframes tev-up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes tev-float{50%{transform:translateY(-12px)}}
+@keyframes tev-ping{70%,100%{box-shadow:0 0 0 10px rgba(60,192,98,0)}}
+@keyframes tev-mq{to{transform:translateX(-50%)}}
+.tev-hero .in>div{min-width:0}
+@media(max-width:900px){.tev-hero{padding-top:50px}.tev-hero .in{grid-template-columns:minmax(0,1fr)}.tev-hero h1{font-size:32px;letter-spacing:-.5px}.tev-hero .stats{gap:22px}.tev-hero .c1{left:6px}.tev-hero .win img{height:240px}.tev-hero .ph{width:96px;height:190px;right:0}}
+.tev-hero:not(.te-in) *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.tev-hero *{animation:none!important}}
+</style>
+<div class="in"><div>
+<p class="badge"><i></i>Websites launch-ready in as little as 7 days</p>
+<h1>Your Business Deserves <span>More Than Just a Website.</span></h1>
+<p class="lead">We design fast, mobile-ready websites that build trust, bring in enquiries and help you sell more — from business sites to full online stores.</p>
+<div class="btns"><a class="b1" href="https://wa.me/916379339909?text=Hi%20Target%20Elevation%2C%20I%27d%20like%20to%20get%20a%20website%20for%20my%20business." target="_blank" rel="noopener"><img src="https://api.iconify.design/ic/baseline-whatsapp.svg?color=%2306210f" width="20" height="20" alt="">Get My Website</a><a class="b2" href="#packages">View Packages →</a></div>
+<div class="stats"><div><b>₹7,999</b><span>Starting price</span></div><div><b>7 Days</b><span>To go live</span></div><div><b>Free</b><span>Domain &amp; hosting</span></div></div></div>
+<div class="vis"><div class="win"><div class="bar"><i></i><i></i><i></i></div><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=900&h=600&fit=crop" width="700" height="330" alt="Business website on laptop"></div>
+<img class="ph" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=260&h=500&fit=crop" width="120" height="236" alt="Website on mobile">
+<div class="chip c1"><img src="https://api.iconify.design/lucide/trending-up.svg?color=%23167a35" width="30" height="30" alt=""><div>More Enquiries<small>Conversion focused</small></div></div>
+<div class="chip c2"><img src="https://api.iconify.design/lucide/search.svg?color=%23167a35" width="30" height="30" alt=""><div>SEO-Ready<small>Found on Google</small></div></div></div></div>
+<div class="tick"><div class="track"><span>Business Websites</span><span>E-commerce Stores</span><span>CMS &amp; Blogs</span><span>WhatsApp Integration</span><span>SEO-Ready Structure</span><span>Mobile-First Design</span><span>Business Websites</span><span>E-commerce Stores</span><span>CMS &amp; Blogs</span><span>WhatsApp Integration</span><span>SEO-Ready Structure</span><span>Mobile-First Design</span></div></div>
+<script>(function(){var s=document.currentScript.parentElement;if(!("IntersectionObserver" in window)){s.classList.add("te-in");return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add("te-in");o.disconnect()}})},{threshold:.08}).observe(s)})();</script>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="tev-why" id="why">
+<style>
+.tev-why{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;background:#fff;padding:90px 5%;box-sizing:border-box}
+.tev-why *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tev-why .in{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1.4fr;gap:60px;align-items:center}
+.tev-why .tag{display:inline-block;color:#167a35;font-weight:700;font-size:13px;letter-spacing:2px;margin:0 0 12px;animation:tev-w-up .8s both}
+.tev-why h2{color:#0d2b17!important;font-size:clamp(28px,3.4vw,42px);line-height:1.15;letter-spacing:-1px;color:#0d2b17;margin:0 0 16px;font-weight:800;animation:tev-w-up .8s .1s both}
+.tev-why h2 span{color:#167a35!important}
+.tev-why p.t{font-size:16px;line-height:1.7;color:#4a5a50;margin:0;animation:tev-w-up .8s .2s both}
+.tev-why .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tev-why .c{position:relative;padding:28px 22px;border-radius:20px;background:#f4faf5;border:1px solid #e3efe6;overflow:hidden;transition:.4s;animation:tev-w-up .8s both}
+.tev-why .c:nth-child(2){animation-delay:.12s;transform:translateY(24px)}.tev-why .c:nth-child(3){animation-delay:.24s}
+.tev-why .c:before{content:"";position:absolute;inset:auto -40% -60% auto;width:160px;height:160px;border-radius:50%;background:radial-gradient(rgba(60,192,98,.25),transparent 70%);transition:.5s}
+.tev-why .c:hover{background:#06210f;border-color:#06210f;color:#fff;box-shadow:0 26px 50px rgba(6,33,15,.3)}
+.tev-why .c:hover:before{transform:scale(2)}
+.tev-why .n{font-size:15px;font-weight:700;color:#3cc062}
+.tev-why .c img{display:block;width:52px;height:52px;padding:13px;margin:16px 0 18px;border-radius:14px;background:linear-gradient(135deg,#1a9040,#0f5a28);transition:.4s}
+.tev-why .c:hover img{transform:rotate(-8deg) scale(1.08)}
+.tev-why h3{font-size:17px;margin:0 0 6px;color:#0d2b17!important;transition:.3s}.tev-why .c:hover h3{color:#fff!important}
+.tev-why .c p{font-size:13px;line-height:1.6;margin:0;color:#5b6b60;transition:.3s}.tev-why .c:hover p{color:#cfe9d6}
+@keyframes tev-w-up{from{opacity:0;translate:0 30px}to{opacity:1;translate:0 0}}
+@media(max-width:1000px){.tev-why .in{grid-template-columns:1fr;gap:36px}}
+@media(max-width:700px){.tev-why .cards{grid-template-columns:1fr}.tev-why .c:nth-child(2){transform:none}}
+.tev-why:not(.te-in) *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.tev-why *{animation:none!important}}
+</style>
+<div class="in"><div><p class="tag">THE REALITY</p><h2>Customers Judge Your Business <span>Before They Call.</span></h2><p class="t">They search, compare and decide online. If your website doesn’t look professional or show a clear next step, those customers go to a competitor.</p></div>
+<div class="cards"><div class="c"><img src="https://api.iconify.design/lucide/shield-check.svg?color=%23ffffff" width="52" height="52" alt=""><h3>Build Trust</h3><p>A professional site shows credibility the moment they land.</p></div><div class="c"><img src="https://api.iconify.design/lucide/mouse-pointer-click.svg?color=%23ffffff" width="52" height="52" alt=""><h3>Explain Your Value</h3><p>Clear pages tell visitors exactly what you offer.</p></div><div class="c"><img src="https://api.iconify.design/lucide/shopping-cart.svg?color=%23ffffff" width="52" height="52" alt=""><h3>Win More Sales</h3><p>Smart calls to action turn visitors into enquiries.</p></div></div></div>
+<script>(function(){var s=document.currentScript.parentElement;if(!("IntersectionObserver" in window)){s.classList.add("te-in");return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add("te-in");o.disconnect()}})},{threshold:.08}).observe(s)})();</script>
+</section>
+
+<!-- ============ PACKAGES (Business + E-commerce tabs) ============ -->
+<section class="tev-pkg" id="packages">
+<style>
+.tev-pkg{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;background:linear-gradient(#f4faf5,#fff);padding:90px 5%;text-align:center;box-sizing:border-box}
+.tev-pkg *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tev-pkg .tag{display:inline-block;color:#167a35;font-weight:700;font-size:13px;letter-spacing:2px;margin:0 0 12px;animation:tev-k-up .8s both}
+.tev-pkg h2{color:#0d2b17!important;font-size:clamp(28px,3.4vw,42px);line-height:1.15;letter-spacing:-1px;color:#0d2b17;margin:0 0 12px;font-weight:800;animation:tev-k-up .8s .1s both}
+.tev-pkg .sub{font-size:16px;color:#4a5a50;line-height:1.7;max-width:600px;margin:0 auto 28px;animation:tev-k-up .8s .2s both}
+.tev-pkg .tabs{display:inline-flex;padding:6px;border-radius:50px;background:#fff;border:1px solid #dcebdf;box-shadow:0 8px 24px rgba(13,43,23,.08);margin-bottom:44px;animation:tev-k-up .8s .3s both}
+.tev-pkg .tabs button{border:0;background:none;padding:12px 26px;border-radius:40px;font-size:14px;font-weight:600;color:#4a5a50;cursor:pointer;transition:.3s}
+.tev-pkg .tabs button.on{background:#06210f;color:#fff;box-shadow:0 8px 20px rgba(6,33,15,.3)}
+.tev-pkg .panel{display:none;max-width:1200px;margin:auto;gap:22px;text-align:left;align-items:stretch}
+.tev-pkg .panel.on{display:grid}
+.tev-pkg .p3{grid-template-columns:repeat(3,1fr)}.tev-pkg .p2{grid-template-columns:repeat(2,1fr);max-width:820px}
+.tev-pkg .pk{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid #e3efe6;border-radius:24px;padding:32px 28px;box-shadow:0 6px 24px rgba(13,43,23,.06);transition:.4s;animation:tev-k-up .7s both}
+.tev-pkg .pk:nth-child(2){animation-delay:.1s}.tev-pkg .pk:nth-child(3){animation-delay:.2s}
+.tev-pkg .pk:hover{transform:translateY(-8px);box-shadow:0 28px 56px rgba(22,122,53,.18)}
+.tev-pkg .pk.pop{background:radial-gradient(circle at 100% 0,rgba(60,192,98,.35),transparent 50%),#06210f;border-color:#06210f;color:#fff;box-shadow:0 30px 60px rgba(6,33,15,.35)}
+.tev-pkg .mp{position:absolute;top:-14px;left:28px;background:#3cc062;color:#06210f;font-size:13px;font-weight:700;padding:6px 16px;border-radius:30px;box-shadow:0 8px 20px rgba(60,192,98,.4)}
+.tev-pkg small{display:block;font-size:13px;font-weight:600;letter-spacing:1.5px;color:#5b6b60}
+.tev-pkg .pop small{color:#9fc9aa}
+.tev-pkg h3{font-size:22px;margin:6px 0 14px;color:#0d2b17!important}.tev-pkg .pop h3{color:#fff!important}
+.tev-pkg .pr{display:flex;align-items:baseline;gap:8px;padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid #e3efe6}
+.tev-pkg .pop .pr{border-color:rgba(255,255,255,.14)}
+.tev-pkg .pr b{font-size:40px;font-weight:800;color:#0f5a28;letter-spacing:-1px;line-height:1}.tev-pkg .pop .pr b{color:#fff}
+.tev-pkg .pr span{font-size:13px;color:#5b6b60}.tev-pkg .pop .pr span{color:#9fc9aa}
+.tev-pkg .in2{font-size:13px;font-weight:600;margin:0 0 10px;color:#167a35}.tev-pkg .pop .in2{color:#3cc062}
+.tev-pkg ul{list-style:none;margin:0 0 26px;padding:0;flex:1}
+.tev-pkg li{display:flex;gap:10px;font-size:14px;line-height:1.45;margin-bottom:11px}
+.tev-pkg li img{flex:none;width:18px;height:18px;margin-top:1px}
+.tev-pkg li.hl{font-weight:600;color:#0f5a28}.tev-pkg .pop li.hl{color:#3cc062}
+.tev-pkg .bt{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px;border-radius:40px;background:#06210f;color:#fff;font-weight:600;font-size:15px;text-decoration:none;transition:.3s}
+.tev-pkg .bt:hover{background:#167a35;transform:translateY(-3px)}
+.tev-pkg .pop .bt{background:#3cc062;color:#06210f;font-weight:700}.tev-pkg .pop .bt:hover{background:#5ad57e}
+.tev-pkg .bs{text-align:center;font-size:13px;color:#5b6b60;margin:12px 0 0}.tev-pkg .pop .bs{color:#9fc9aa}
+@keyframes tev-k-up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@media(max-width:1000px){.tev-pkg .p3,.tev-pkg .p2{grid-template-columns:1fr;max-width:480px}.tev-pkg .pk.pop{margin-top:10px}}
+@media(max-width:480px){.tev-pkg .tabs button{padding:11px 16px;font-size:13px}}
+.tev-pkg:not(.te-in) *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.tev-pkg *{animation:none!important}}
+</style>
+<p class="tag">PACKAGES &amp; PRICING</p><h2>Simple, Transparent Pricing.</h2><p class="sub">Domain and hosting included in every package. Pick the one that fits your goals today.</p>
+<div class="tabs" role="tablist"><button class="on" type="button" role="tab" aria-selected="true" data-p="tev-biz">Business Websites</button><button type="button" role="tab" aria-selected="false" data-p="tev-eco">E-commerce Stores</button></div>
+
+<div class="panel p3 on" id="tev-biz" role="tabpanel">
+<div class="pk"><small>THE ESSENTIALS</small><h3>Elevate Starter</h3><div class="pr"><b>₹7,999</b><span>up to 4 pages</span></div><ul>
+<li class="hl"><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Domain &amp; hosting for 1 year</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Home, About, Services &amp; Contact pages</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Brand-aligned, mobile-responsive design</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Contact form, WhatsApp &amp; click-to-call</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">SSL setup &amp; social media links</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Basic on-page SEO</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">1 revision round</li></ul>
+<a class="bt" href="https://wa.me/916379339909?text=Hi%2C%20I%27m%20interested%20in%20the%20Elevate%20Starter%20package%20(%E2%82%B97%2C999)." target="_blank" rel="noopener">Get Started →</a><p class="bs">For startups, freelancers &amp; small businesses</p></div>
+
+<div class="pk pop"><span class="mp">★ Most Popular</span><small>THE GROWTH PACKAGE</small><h3>Elevate Growth</h3><div class="pr"><b>₹14,999</b><span>up to 8 pages</span></div><p class="in2">Everything in Starter, plus:</p><ul>
+<li class="hl"><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Domain &amp; 2-year hosting</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Enhanced UI/UX &amp; dedicated service pages</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Conversion-focused CTA placement</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Blog or CMS setup (as agreed)</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Expanded SEO, sitemap &amp; Search Console</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Google Analytics 4 setup</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">2 revisions + handover session</li></ul>
+<a class="bt" href="https://wa.me/916379339909?text=Hi%2C%20I%27m%20interested%20in%20the%20Elevate%20Growth%20package%20(%E2%82%B914%2C999)." target="_blank" rel="noopener">Choose Growth →</a><p class="bs">For growing businesses</p></div>
+
+<div class="pk"><small>THE ADVANCED PACKAGE</small><h3>Elevate Pro</h3><div class="pr"><b>₹29,999</b><span>up to 12 pages</span></div><p class="in2">Everything in Growth, plus:</p><ul>
+<li class="hl"><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Domain &amp; 2-year hosting</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Advanced UI/UX &amp; custom layouts</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Advanced forms &amp; lead tracking</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Conversion-event tracking</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Structured data &amp; advanced speed tuning</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Portfolio / case-study sections</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">3 revision rounds</li></ul>
+<a class="bt" href="https://wa.me/916379339909?text=Hi%2C%20I%27m%20interested%20in%20the%20Elevate%20Pro%20package%20(%E2%82%B929%2C999)." target="_blank" rel="noopener">Explore Pro →</a><p class="bs">For established brands</p></div>
+</div>
+
+<div class="panel p2" id="tev-eco" role="tabpanel">
+<div class="pk"><small>YOUR FIRST ONLINE STORE</small><h3>E-commerce Basic</h3><div class="pr"><b>₹14,999</b><span>up to 30 products</span></div><ul>
+<li class="hl"><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Domain &amp; hosting for 1 year</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Responsive storefront with categories</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Cart, checkout &amp; 1 payment gateway</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Basic shipping setup</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Product &amp; category SEO</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="18" height="18" alt="">Order management &amp; admin training</li></ul>
+<a class="bt" href="https://wa.me/916379339909?text=Hi%2C%20I%27m%20interested%20in%20the%20E-commerce%20Basic%20package%20(%E2%82%B914%2C999)." target="_blank" rel="noopener">Launch My Store →</a><p class="bs">For small retailers, boutiques &amp; new brands</p></div>
+
+<div class="pk pop"><span class="mp">★ For Growing Brands</span><small>SCALE YOUR SALES</small><h3>E-commerce Growth</h3><div class="pr"><b>₹34,999</b><span>up to 100 products</span></div><ul>
+<li class="hl"><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Domain &amp; 2-year hosting</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Product variants (size, colour etc.)</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Stock &amp; order management</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Payments &amp; shipping (as scoped)</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Coupons &amp; customer accounts</li>
+<li><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%233cc062" width="18" height="18" alt="">Advanced SEO, structured data &amp; Search Console</li></ul>
+<a class="bt" href="https://wa.me/916379339909?text=Hi%2C%20I%27m%20interested%20in%20the%20E-commerce%20Growth%20package%20(%E2%82%B934%2C999)." target="_blank" rel="noopener">Grow My Store →</a><p class="bs">For D2C brands, retailers &amp; manufacturers</p></div>
+</div>
+<script>(function(){var s=document.currentScript.parentElement,b=s.querySelectorAll(".tabs button");b.forEach(function(t){t.addEventListener("click",function(){b.forEach(function(x){x.classList.remove("on");x.setAttribute("aria-selected","false");document.getElementById(x.dataset.p).classList.remove("on")});t.classList.add("on");t.setAttribute("aria-selected","true");document.getElementById(t.dataset.p).classList.add("on")})})})();</script>
+<script>(function(){var s=document.currentScript.parentElement;if(!("IntersectionObserver" in window)){s.classList.add("te-in");return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add("te-in");o.disconnect()}})},{threshold:.08}).observe(s)})();</script>
+</section>
+
+<!-- ============ WHAT YOU GET (bento + live mini-animations) ============ -->
+<section class="tev-fx" id="features">
+<style>
+.tev-fx{position:relative;overflow:hidden;font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;background:#f4faf5;padding:100px 5%;box-sizing:border-box}
+.tev-fx *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+/* moving background blobs + dots */
+.tev-fx:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(22,122,53,.14) 1px,transparent 1px);background-size:26px 26px;-webkit-mask-image:linear-gradient(#000,transparent 80%);mask-image:linear-gradient(#000,transparent 80%)}
+.tev-fx .blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.55;animation:tev-x-blob 14s ease-in-out infinite alternate}
+.tev-fx .b1{width:380px;height:380px;background:#b8f5c8;left:-120px;top:60px}
+.tev-fx .b2{width:320px;height:320px;background:#8fe3a6;right:-100px;bottom:40px;animation-delay:-7s}
+/* heading */
+.tev-fx .hd{position:relative;text-align:center;max-width:720px;margin:0 auto 54px}
+.tev-fx .tag{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:40px;background:#fff;border:1px solid #dcebdf;color:#167a35;font-weight:700;font-size:13px;letter-spacing:2px;margin:0 0 16px;animation:tev-x-up .8s both}
+.tev-fx .tag i{width:7px;height:7px;border-radius:50%;background:#3cc062;animation:tev-x-blink 1.4s infinite}
+.tev-fx h2{color:#0d2b17!important;font-size:clamp(28px,3.6vw,46px);line-height:1.12;letter-spacing:-1.2px;margin:0 0 14px;font-weight:800;animation:tev-x-up .8s .1s both}
+.tev-fx h2 span{background:linear-gradient(90deg,#167a35,#3cc062,#167a35);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent;animation:tev-x-shine 4s linear infinite}
+.tev-fx .hd p{font-size:16px;line-height:1.7;color:#4a5a50;margin:0;animation:tev-x-up .8s .2s both}
+/* grid */
+.tev-fx .grid{position:relative;max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tev-fx .c{--x:50%;--y:50%;position:relative;display:flex;flex-direction:column;padding:26px;border-radius:24px;background:#fff;border:1px solid #e3efe6;overflow:hidden;box-shadow:0 6px 24px rgba(13,43,23,.05);transition:transform .25s ease,box-shadow .4s;animation:tev-x-in .8s both;transform-style:preserve-3d}
+.tev-fx .c:nth-child(2){animation-delay:.1s}.tev-fx .c:nth-child(3){animation-delay:.2s}.tev-fx .c:nth-child(4){animation-delay:.3s}.tev-fx .c:nth-child(5){animation-delay:.4s}.tev-fx .c:nth-child(6){animation-delay:.5s}
+/* cursor spotlight + glowing border */
+.tev-fx .c:before{content:"";position:absolute;inset:0;border-radius:inherit;background:radial-gradient(420px circle at var(--x) var(--y),rgba(60,192,98,.14),transparent 45%);opacity:0;transition:.4s;pointer-events:none}
+.tev-fx .c:after{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.5px;background:radial-gradient(260px circle at var(--x) var(--y),#3cc062,transparent 60%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);opacity:0;transition:.4s;pointer-events:none}
+.tev-fx .c:hover:before,.tev-fx .c:hover:after{opacity:1}
+.tev-fx .c:hover{box-shadow:0 30px 60px rgba(22,122,53,.18)}
+.tev-fx .w2{grid-column:span 2}.tev-fx .big{grid-column:span 2;grid-row:span 2}
+.tev-fx .top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.tev-fx .ic{flex:none;width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1a9040,#0f5a28);box-shadow:0 8px 18px rgba(22,122,53,.3);transition:.4s}
+.tev-fx .ic img{width:22px;height:22px}
+.tev-fx .c:hover .ic{transform:rotate(-10deg) scale(1.1)}
+.tev-fx h3{color:#0d2b17!important;font-size:17px;line-height:1.3;margin:0;font-weight:700}
+.tev-fx .c p{font-size:14px;line-height:1.6;color:#5b6b60;margin:0 0 18px}
+.tev-fx .viz{position:relative;margin-top:auto;border-radius:16px;background:#f4faf5;border:1px solid #e3efe6;padding:16px;min-height:130px;overflow:hidden}
+/* BIG dark card */
+.tev-fx .big{background:radial-gradient(circle at 100% 0,rgba(60,192,98,.35),transparent 50%),#06210f;border-color:#06210f;color:#fff}
+.tev-fx .big h3{color:#fff!important;font-size:24px}
+.tev-fx .big p{color:#cfe9d6;max-width:460px}
+.tev-fx .big .ic{background:#3cc062}
+.tev-fx .big .viz{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);min-height:300px;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:18px}
+.tev-fx .dev{display:flex;gap:6px;margin-bottom:auto;padding:5px;border-radius:30px;background:rgba(255,255,255,.08)}
+.tev-fx .dev span{font-size:13px;font-weight:600;color:#9fc9aa;padding:5px 14px;border-radius:30px;animation:tev-x-pill 9s infinite}
+.tev-fx .dev span:nth-child(2){animation-delay:3s}.tev-fx .dev span:nth-child(3){animation-delay:6s}
+.tev-fx .frame{flex:1;display:flex;flex-direction:column;width:100%;margin-top:18px;border-radius:12px;border:2px solid rgba(255,255,255,.2);background:#0f2f1a;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.4);animation:tev-x-resize 9s cubic-bezier(.7,0,.3,1) infinite}
+.tev-fx .frame .bar{display:flex;gap:5px;padding:8px 10px;background:rgba(255,255,255,.07)}
+.tev-fx .frame .bar i{width:8px;height:8px;border-radius:50%;background:#ff5f57}.tev-fx .frame .bar i:nth-child(2){background:#febc2e}.tev-fx .frame .bar i:nth-child(3){background:#28c840}
+.tev-fx .frame img{display:block;width:100%;flex:1;min-height:200px;height:250px;object-fit:cover;object-position:top}
+/* SEO: typing search + #1 result */
+.tev-fx .sb{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #dcebdf;border-radius:30px;padding:9px 14px;font-size:13px;color:#1b2b20;margin-bottom:12px}
+.tev-fx .sb img{width:16px;height:16px;flex:none}
+.tev-fx .typ{display:inline-block;overflow:hidden;white-space:nowrap;border-right:2px solid #167a35;width:0;animation:tev-x-type 6s steps(26) infinite,tev-x-caret .7s step-end infinite}
+.tev-fx .res{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:10px;font-size:13px;margin-bottom:6px;background:#fff;border:1px solid #e3efe6}
+.tev-fx .res b{font-size:13px;color:#0d2b17}
+.tev-fx .res.me{border-color:#3cc062;background:#e7f5ea;animation:tev-x-rise 6s ease-in-out infinite}
+.tev-fx .res.me em{margin-left:auto;font-style:normal;font-weight:700;color:#fff;background:#167a35;padding:2px 9px;border-radius:20px}
+.tev-fx .ln{flex:1;height:7px;border-radius:6px;background:#e3efe6}
+/* Leads: toasts */
+.tev-fx .toast{position:absolute;left:14px;right:14px;display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #e3efe6;border-radius:12px;padding:9px 12px;font-size:13px;font-weight:600;color:#0d2b17;box-shadow:0 10px 22px rgba(13,43,23,.08);opacity:0;animation:tev-x-toast 7.5s infinite}
+.tev-fx .toast img{width:26px;height:26px;padding:5px;border-radius:8px;background:#e7f5ea;flex:none}
+.tev-fx .toast small{display:block;font-weight:400;color:#5b6b60;font-size:13px}
+.tev-fx .t1,.tev-fx .t2,.tev-fx .t3{top:50%;margin-top:-28px}.tev-fx .t2{animation-delay:2.5s}.tev-fx .t3{animation-delay:5s}
+.tev-fx .lead-v{min-height:110px;flex:1}
+/* Analytics: bars */
+.tev-fx .bars{display:flex;align-items:flex-end;gap:7px;height:96px}
+.tev-fx .bars i{flex:1;border-radius:6px 6px 3px 3px;background:linear-gradient(#3cc062,#167a35);transform-origin:bottom;animation:tev-x-bar 3.2s ease-in-out infinite alternate}
+.tev-fx .bars i:nth-child(1){height:35%}.tev-fx .bars i:nth-child(2){height:55%;animation-delay:.2s}.tev-fx .bars i:nth-child(3){height:42%;animation-delay:.4s}.tev-fx .bars i:nth-child(4){height:70%;animation-delay:.6s}.tev-fx .bars i:nth-child(5){height:62%;animation-delay:.8s}.tev-fx .bars i:nth-child(6){height:88%;animation-delay:1s}.tev-fx .bars i:nth-child(7){height:100%;animation-delay:1.2s}
+.tev-fx .live{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#167a35;margin-bottom:10px}
+.tev-fx .live i{width:7px;height:7px;border-radius:50%;background:#3cc062;animation:tev-x-blink 1.2s infinite}
+/* CMS: editor */
+.tev-fx .ed{display:flex;gap:14px;align-items:stretch}
+.tev-fx .side{width:30%;display:flex;flex-direction:column;gap:7px}
+.tev-fx .side i{height:9px;border-radius:5px;background:#dcebdf}.tev-fx .side i:first-child{background:#3cc062;width:80%}
+.tev-fx .doc{flex:1;background:#fff;border:1px solid #e3efe6;border-radius:10px;padding:12px}
+.tev-fx .doc .h{height:11px;width:55%;border-radius:5px;background:#0d2b17;margin-bottom:9px}
+.tev-fx .doc .l{height:7px;border-radius:5px;background:#e3efe6;margin-bottom:7px}
+.tev-fx .doc .tw{height:7px;border-radius:5px;background:#3cc062;width:0;animation:tev-x-write 5s ease-in-out infinite}
+.tev-fx .pub{display:inline-flex;margin-top:10px;font-size:13px;font-weight:700;color:#fff;background:#167a35;padding:5px 14px;border-radius:20px;animation:tev-x-pub 5s infinite}
+/* Speed: gauge */
+.tev-fx .sp{display:flex;align-items:center;gap:18px}
+.tev-fx .g{position:relative;width:104px;height:104px;flex:none}
+.tev-fx .g svg{width:104px;height:104px;transform:rotate(-90deg)}
+.tev-fx .g circle{fill:none;stroke-width:9}
+.tev-fx .g .tr{stroke:#dcebdf}
+.tev-fx .g .vl{stroke:url(#tevg);stroke-linecap:round;stroke-dasharray:276;stroke-dashoffset:276;transition:stroke-dashoffset 2s cubic-bezier(.2,.8,.2,1)}
+.tev-fx.te-in .g .vl{stroke-dashoffset:14}
+.tev-fx .g b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:800;color:#0d2b17}
+.tev-fx .chk{display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:500;color:#1b2b20}
+.tev-fx .chk span{display:flex;align-items:center;gap:8px;opacity:0;transform:translateX(-10px);transition:.5s}
+.tev-fx .chk img{width:16px;height:16px}
+.tev-fx.te-in .chk span{opacity:1;transform:none}
+.tev-fx.te-in .chk span:nth-child(2){transition-delay:.4s}.tev-fx.te-in .chk span:nth-child(3){transition-delay:.8s}
+/* keyframes */
+@keyframes tev-x-up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes tev-x-in{from{opacity:0;translate:0 40px;scale:.96}to{opacity:1;translate:0 0;scale:1}}
+@keyframes tev-x-blob{to{transform:translate(80px,60px) scale(1.15)}}
+@keyframes tev-x-blink{50%{opacity:.25}}
+@keyframes tev-x-shine{to{background-position:200% center}}
+@keyframes tev-x-resize{0%,28%{width:100%}34%,61%{width:66%}67%,94%{width:38%}100%{width:100%}}
+@keyframes tev-x-pill{0%,30%{background:#3cc062;color:#06210f}34%,100%{background:transparent;color:#9fc9aa}}
+@keyframes tev-x-type{0%{width:0}40%,85%{width:15.5em}100%{width:0}}
+@keyframes tev-x-caret{50%{border-color:transparent}}
+@keyframes tev-x-rise{0%,35%{transform:translateY(36px);box-shadow:none}50%,90%{transform:translateY(0);box-shadow:0 10px 24px rgba(22,122,53,.25)}100%{transform:translateY(36px)}}
+@keyframes tev-x-toast{0%{opacity:0;transform:translateY(16px) scale(.96)}6%,30%{opacity:1;transform:none}36%,100%{opacity:0;transform:translateY(-16px) scale(.96)}}
+@keyframes tev-x-bar{from{transform:scaleY(.45)}to{transform:scaleY(1)}}
+@keyframes tev-x-write{0%,10%{width:0}60%,100%{width:85%}}
+@keyframes tev-x-pub{0%,62%{transform:none;box-shadow:0 0 0 0 rgba(60,192,98,.6)}70%{transform:scale(1.08);box-shadow:0 0 0 8px rgba(60,192,98,0)}80%,100%{transform:none}}
+@media(max-width:1000px){.tev-fx .grid{grid-template-columns:1fr 1fr}.tev-fx .big{grid-row:auto}}
+@media(max-width:640px){.tev-fx{padding:70px 5%}.tev-fx .grid{grid-template-columns:1fr}.tev-fx .w2,.tev-fx .big{grid-column:auto}.tev-fx .big .viz{min-height:260px}.tev-fx .frame img{height:160px}}
+.tev-fx:not(.te-in) *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.tev-fx *{animation:none!important}.tev-fx .typ{width:auto}.tev-fx .toast.t1{opacity:1}}
+</style>
+<span class="blob b1"></span><span class="blob b2"></span>
+<div class="hd"><p class="tag"><i></i>WHAT YOU GET</p><h2>Every Detail Designed <span>With a Purpose.</span></h2><p>Everything your website needs to look great, get found and turn visitors into customers — built in from day one.</p></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="tevg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3cc062"/><stop offset="1" stop-color="#167a35"/></linearGradient></defs></svg>
+<div class="grid">
+
+<div class="c big"><div class="top"><span class="ic"><img src="https://api.iconify.design/lucide/monitor-smartphone.svg?color=%2306210f" width="22" height="22" alt=""></span><h3>Responsive UI/UX Design</h3></div>
+<p>Beautiful, fast layouts that look perfect on every phone, tablet and desktop — with navigation your customers understand instantly.</p>
+<div class="viz"><div class="dev"><span>Desktop</span><span>Tablet</span><span>Mobile</span></div>
+<div class="frame"><div class="bar"><i></i><i></i><i></i></div><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=900&h=500&fit=crop" width="700" height="200" alt="Responsive website preview"></div></div></div>
+
+<div class="c w2"><div class="top"><span class="ic"><img src="https://api.iconify.design/lucide/search.svg?color=%23ffffff" width="22" height="22" alt=""></span><h3>SEO-Ready Structure</h3></div>
+<p>Metadata, sitemap and indexing set up so Google can find you.</p>
+<div class="viz"><div class="sb"><img src="https://api.iconify.design/lucide/search.svg?color=%23167a35" width="16" height="16" alt=""><span class="typ">best website designer near me</span></div>
+<div class="res me"><b>yourbusiness.in</b><span class="ln"></span><em>#1</em></div><div class="res"><b>competitor.com</b><span class="ln"></span></div></div></div>
+
+<div class="c"><div class="top"><span class="ic"><img src="https://api.iconify.design/lucide/filter.svg?color=%23ffffff" width="22" height="22" alt=""></span><h3>Lead Generation</h3></div>
+<p>Forms, WhatsApp and clear CTAs on every page.</p>
+<div class="viz lead-v"><div class="toast t1"><img src="https://api.iconify.design/ic/baseline-whatsapp.svg?color=%23167a35" width="26" height="26" alt=""><div>New WhatsApp chat<small>just now</small></div></div><div class="toast t2"><img src="https://api.iconify.design/lucide/mail.svg?color=%23167a35" width="26" height="26" alt=""><div>Quote request<small>via website form</small></div></div><div class="toast t3"><img src="https://api.iconify.design/lucide/phone.svg?color=%23167a35" width="26" height="26" alt=""><div>Incoming call<small>click-to-call</small></div></div></div></div>
+
+<div class="c"><div class="top"><span class="ic"><img src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23ffffff" width="22" height="22" alt=""></span><h3>Analytics &amp; Tracking</h3></div>
+<p>GA4, Search Console and conversion tracking.</p>
+<div class="viz"><div class="live"><i></i>Live visitors</div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+
+<div class="c w2"><div class="top"><span class="ic"><img src="https://api.iconify.design/lucide/file-text.svg?color=%23ffffff" width="22" height="22" alt=""></span><h3>Easy Content Updates</h3></div>
+<p>Edit pages, blogs and products yourself — no coding needed.</p>
+<div class="viz"><div class="ed"><div class="side"><i></i><i></i><i></i><i></i></div><div class="doc"><div class="h"></div><div class="l"></div><div class="l" style="width:80%"></div><div class="tw"></div><span class="pub">Publish</span></div></div></div></div>
+
+<div class="c w2"><div class="top"><span class="ic"><img src="https://api.iconify.design/lucide/zap.svg?color=%23ffffff" width="22" height="22" alt=""></span><h3>Speed &amp; Testing</h3></div>
+<p>Optimised images and full pre-launch checks on every device.</p>
+<div class="viz"><div class="sp"><div class="g"><svg viewBox="0 0 104 104"><circle class="tr" cx="52" cy="52" r="44"/><circle class="vl" cx="52" cy="52" r="44"/></svg><b data-to="95">0</b></div>
+<div class="chk"><span><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="16" height="16" alt="">Images optimised</span><span><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="16" height="16" alt="">Mobile &amp; desktop tested</span><span><img src="https://api.iconify.design/lucide/check-circle-2.svg?color=%23167a35" width="16" height="16" alt="">Every link &amp; form checked</span></div></div></div></div>
+
+</div>
+<script>(function(){var s=document.currentScript.parentElement,cards=s.querySelectorAll(".c"),fine=window.matchMedia&&matchMedia("(hover:hover) and (pointer:fine)").matches;
+cards.forEach(function(c){c.addEventListener("mousemove",function(e){var r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;c.style.setProperty("--x",x+"px");c.style.setProperty("--y",y+"px");if(fine){c.style.transform="perspective(900px) rotateX("+((y/r.height-.5)*-5)+"deg) rotateY("+((x/r.width-.5)*5)+"deg)"}});c.addEventListener("mouseleave",function(){c.style.transform=""})});
+function go(){s.classList.add("te-in");var b=s.querySelector("[data-to]"),to=+b.dataset.to,t0=null;function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/2000,1);b.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
+if(!("IntersectionObserver" in window)){go();return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){go();o.disconnect()}})},{threshold:.12}).observe(s)})();</script>
+</section>
+<!-- ============ PROCESS ============ -->
+<section class="tev-pro" id="process">
+<style>
+.tev-pro{font-family:'Poppins',sans-serif;font-size:15px;color:#fff;background:radial-gradient(circle at 50% 0,rgba(60,192,98,.25),transparent 50%),#06210f;padding:90px 5%;text-align:center;box-sizing:border-box}
+.tev-pro *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tev-pro .tag{display:inline-block;color:#3cc062;font-weight:700;font-size:13px;letter-spacing:2px;margin:0 0 12px;animation:tev-p-up .8s both}
+.tev-pro h2{color:#fff!important;font-size:clamp(28px,3.4vw,42px);line-height:1.15;letter-spacing:-1px;margin:0 0 50px;font-weight:800;animation:tev-p-up .8s .1s both}
+.tev-pro .row{position:relative;max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.tev-pro .row:before{content:"";position:absolute;left:10%;right:10%;top:28px;height:2px;background:linear-gradient(90deg,#3cc062,rgba(60,192,98,.2));transform-origin:left;animation:tev-p-line 1.6s .3s both}
+.tev-pro .s{position:relative;padding:0 6px;animation:tev-p-up .7s both}
+.tev-pro .s:nth-child(2){animation-delay:.15s}.tev-pro .s:nth-child(3){animation-delay:.3s}.tev-pro .s:nth-child(4){animation-delay:.45s}.tev-pro .s:nth-child(5){animation-delay:.6s}
+.tev-pro .n{position:relative;z-index:1;width:56px;height:56px;margin:0 auto 18px;border-radius:50%;background:#0f2f1a;border:2px solid #3cc062;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 8px #06210f;transition:.4s}
+.tev-pro .n img{width:24px;height:24px}
+.tev-pro .s:hover .n{background:#3cc062;transform:scale(1.12)}
+.tev-pro .s:hover .n img{filter:brightness(0)}
+.tev-pro small{display:block;font-size:13px;font-weight:600;color:#3cc062;margin-bottom:4px}
+.tev-pro h3{font-size:16px;margin:0 0 6px;color:#fff!important}
+.tev-pro p{font-size:13px;color:#9fc9aa;line-height:1.55;margin:0 auto;max-width:190px}
+@keyframes tev-p-up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes tev-p-line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(max-width:900px){.tev-pro .row{grid-template-columns:1fr 1fr;row-gap:36px}.tev-pro .row:before{display:none}}
+.tev-pro:not(.te-in) *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.tev-pro *{animation:none!important}}
+</style>
+<p class="tag">HOW IT WORKS</p><h2>From Idea to Launch in 5 Simple Steps</h2>
+<div class="row">
+<div class="s"><div class="n"><img src="https://api.iconify.design/lucide/search.svg?color=%233cc062" width="24" height="24" alt=""></div><h3>Discovery</h3><p>We understand your business and goals.</p></div>
+<div class="s"><div class="n"><img src="https://api.iconify.design/lucide/layout-template.svg?color=%233cc062" width="24" height="24" alt=""></div><h3>Planning</h3><p>Sitemap, features and design direction.</p></div>
+<div class="s"><div class="n"><img src="https://api.iconify.design/lucide/pen-tool.svg?color=%233cc062" width="24" height="24" alt=""></div><h3>Design &amp; Build</h3><p>We create and develop your website.</p></div>
+<div class="s"><div class="n"><img src="https://api.iconify.design/lucide/settings-2.svg?color=%233cc062" width="24" height="24" alt=""></div><h3>Test &amp; Optimise</h3><p>Speed, devices and every link checked.</p></div>
+<div class="s"><div class="n"><img src="https://api.iconify.design/lucide/rocket.svg?color=%233cc062" width="24" height="24" alt=""></div><h3>Launch</h3><p>Your site goes live with full handover.</p></div>
+</div>
+<script>(function(){var s=document.currentScript.parentElement;if(!("IntersectionObserver" in window)){s.classList.add("te-in");return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add("te-in");o.disconnect()}})},{threshold:.08}).observe(s)})();</script>
+</section>
+
+<!-- ============ CLOSING CTA (delete this section if not needed) ============ -->
+<section class="tev-cta">
+<style>
+.tev-cta{font-family:'Poppins',sans-serif;font-size:15px;background:#fff;padding:80px 5%;box-sizing:border-box}
+.tev-cta *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tev-cta .box{position:relative;overflow:hidden;max-width:1200px;margin:auto;padding:56px 50px;border-radius:28px;background:linear-gradient(120deg,#1a9040,#0f5a28);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;box-shadow:0 30px 60px rgba(22,122,53,.3);animation:tev-c-up .8s both}
+.tev-cta .box:before{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;border:40px solid rgba(255,255,255,.08);animation:tev-c-spin 14s linear infinite}
+.tev-cta h2{color:#fff!important;position:relative;font-size:clamp(24px,3vw,36px);line-height:1.2;letter-spacing:-.5px;margin:0 0 8px;font-weight:800}
+.tev-cta p{position:relative;font-size:16px;color:#d6efdc;margin:0}
+.tev-cta .btns{position:relative;display:flex;gap:12px;flex-wrap:wrap}
+.tev-cta a{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:40px;font-weight:700;font-size:15px;text-decoration:none;transition:.3s}
+.tev-cta a img{width:20px;height:20px}
+.tev-cta .w{background:#fff;color:#0f5a28}.tev-cta .w:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(0,0,0,.2)}
+.tev-cta .c{border:1.5px solid rgba(255,255,255,.5);color:#fff}.tev-cta .c:hover{background:rgba(255,255,255,.12);transform:translateY(-3px)}
+@keyframes tev-c-up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes tev-c-spin{to{transform:rotate(360deg)}}
+@media(max-width:700px){.tev-cta .box{padding:40px 26px}}
+.tev-cta:not(.te-in) *{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.tev-cta *{animation:none!important}}
+</style>
+<div class="box"><div><h2>Ready to Go Live in 7 Days?</h2><p>Get a free, no-obligation quote today.</p></div>
+<div class="btns"><a class="w" href="https://wa.me/916379339909?text=Hi%20Target%20Elevation%2C%20I%27d%20like%20a%20free%20quote%20for%20a%20website." target="_blank" rel="noopener"><img src="https://api.iconify.design/ic/baseline-whatsapp.svg?color=%230f5a28" width="20" height="20" alt="">Chat on WhatsApp</a><a class="c" href="tel:+916379339909"><img src="https://api.iconify.design/lucide/phone.svg?color=%23ffffff" width="20" height="20" alt="">Call Now</a></div></div>
+<script>(function(){var s=document.currentScript.parentElement;if(!("IntersectionObserver" in window)){s.classList.add("te-in");return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add("te-in");o.disconnect()}})},{threshold:.08}).observe(s)})();</script>
+</section>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<section class="tev-wa">
+<style>
+.tev-wa{position:fixed;right:22px;bottom:22px;z-index:9999;font-family:'Poppins',sans-serif;box-sizing:border-box}
+.tev-wa *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.tev-wa a{position:relative;display:flex;align-items:center;gap:10px;text-decoration:none;animation:tev-wa-in .8s 1s both}
+.tev-wa .tip{background:#fff;color:#0d2b17;font-size:13px;font-weight:600;padding:9px 14px;border-radius:30px;box-shadow:0 8px 22px rgba(0,0,0,.18);opacity:0;transform:translateX(10px);transition:.3s;white-space:nowrap}
+.tev-wa a:hover .tip{opacity:1;transform:none}
+.tev-wa .btn{position:relative;width:60px;height:60px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(37,211,102,.5);transition:.3s;animation:tev-wa-bob 3s 2s ease-in-out infinite}
+.tev-wa .btn:before{content:"";position:absolute;inset:0;border-radius:50%;background:#25d366;z-index:-1;animation:tev-wa-ring 2s infinite}
+.tev-wa a:hover .btn{transform:scale(1.1)}
+.tev-wa .btn img{width:34px;height:34px;filter:brightness(0) invert(1)}
+@keyframes tev-wa-in{from{opacity:0;transform:translateY(30px) scale(.6)}to{opacity:1;transform:none}}
+@keyframes tev-wa-bob{50%{transform:translateY(-6px)}}
+@keyframes tev-wa-ring{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.7);opacity:0}}
+@media(max-width:600px){.tev-wa{right:14px;bottom:14px}.tev-wa .tip{display:none}}
+@media(prefers-reduced-motion:reduce){.tev-wa *{animation:none!important}}
+</style>
+<a href="https://wa.me/916379339909?text=Hi%20Target%20Elevation%2C%20I%27d%20like%20to%20know%20more%20about%20your%20website%20packages." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><span class="tip">Chat with us on WhatsApp</span><span class="btn"><img src="https://api.iconify.design/logos/whatsapp-icon.svg" width="34" height="34" alt="WhatsApp"></span></a>
+</section>
