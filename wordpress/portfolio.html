@@ -39,6 +39,16 @@ LAYOUT: hero with stats, section switcher, website grid, ads grid, popup, CTA
 #te-pf-hero .m3 strong,#te-pf-hero .m3 small,#te-pf-hero .m3 em{color:#0a3d1f}
 @keyframes tePfFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 @media (prefers-reduced-motion:reduce){#te-pf-hero .mcard{animation:none}}
+/* Theme guard: keeps this page identical inside WordPress (Astra adds
+   letter-spacing, padding and a green hover to every <button>, a 1.7
+   line-height, a 17px base size and a dark heading colour). */
+#te-pf-hero,#te-pf-nav,.te-pf-sec,#te-pf-modal,#te-pf-cta{line-height:normal;font-size:16px}
+#te-pf-hero h1{color:#fff}
+.te-pf-sec button,#te-pf-modal button{letter-spacing:normal;text-transform:none;line-height:normal;font-size:inherit;font-family:inherit}
+.te-pf-sec .card,.te-pf-sec .card:hover,.te-pf-sec .card:focus{background:#fff;color:#141a16}
+.te-pf-sec .acts .more,.te-pf-sec .acts .more:hover,.te-pf-sec .acts .more:focus{background:none;color:#0b4d26;box-shadow:none}
+#te-pf-modal .close{padding:0;line-height:1}
+#te-pf-modal .btn{letter-spacing:normal}
 @media (max-width:960px){#te-pf-hero{background:linear-gradient(180deg,rgba(10,61,31,.96),rgba(10,61,31,.82)),url("https://target-elevation.vercel.app/images/portfolio/hero-banner.jpg") center/cover no-repeat #0a3d1f}#te-pf-hero .wrap{grid-template-columns:1fr}#te-pf-hero .board{height:400px;max-width:520px;width:100%;margin:0 auto}}
 @media (max-width:600px){#te-pf-hero .stats{grid-template-columns:repeat(2,minmax(0,1fr))}#te-pf-hero .board{height:390px}#te-pf-hero .mcard{padding:14px 16px}#te-pf-hero .mcard strong{font-size:23px}}
 </style>
