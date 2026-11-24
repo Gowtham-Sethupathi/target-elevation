@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Footer | Target Elevation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin:0;background:#f4f8f3">
+
+<!-- =====================================================================
+     TARGET ELEVATION FOOTER — copy everything from here ...
+     Self-contained: scoped CSS (te8- prefix), no global styles.
+     Icons are SVG files hosted with this project:
+       https://target-elevation.vercel.app/images/icons/
+     (local copies in images/icons/). To change an icon, replace the file
+     or the src. Needs Poppins loaded once in the WordPress <head>.
+     ===================================================================== -->
+<footer class="te8">
+<style>
+.te8{position:relative;overflow:hidden;width:100%;clear:both;font-family:'Poppins',sans-serif;background:radial-gradient(900px 400px at 85% 90%,rgba(47,174,90,.16),transparent 70%),linear-gradient(180deg,#0b2a17 0%,#061a0e 100%);color:#d3e8da;text-align:left;box-sizing:border-box}
+.te8 *{box-sizing:border-box;font-family:'Poppins',sans-serif;text-align:left}
+.te8 ul{list-style:none;margin:0;padding:0}
+.te8 li{margin:0;padding:0}
+.te8 a{text-decoration:none}
+.te8 img{display:block;max-width:none;height:auto;border:0;box-shadow:none;margin:0}
+.te8-in{max-width:1240px;margin:0 auto;padding:72px 32px 0}
+.te8-grid{display:grid;grid-template-columns:1.5fr .8fr 1.1fr;gap:56px;align-items:start}
+.te8-logo{display:inline-flex;align-items:center;gap:14px;margin:0 0 18px}
+.te8-mark{width:46px;height:46px;border-radius:12px;background:#fff;color:#0b4a22;font-size:16px;font-weight:700;display:grid;place-items:center;transition:transform .4s}
+.te8-logo:hover .te8-mark{transform:rotate(-8deg) scale(1.08)}
+.te8-name{font-size:17px;font-weight:600;color:#fff}
+.te8-name b{color:#3ddc6e;font-weight:600}
+.te8-tag{font-size:13px;font-weight:600;letter-spacing:2.5px;color:#58d27d;margin:0 0 16px}
+.te8-desc{font-size:14px;line-height:1.8;color:#b9d2c1;margin:0 0 26px;max-width:380px}
+.te8-soc{display:flex;gap:12px}
+.te8-soc a{width:40px;height:40px;flex:none;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);display:grid;place-items:center;transition:transform .3s,background .3s,border-color .3s}
+.te8-soc a:hover{transform:translateY(-5px);background:#1f8f45;border-color:#58d27d}
+.te8-soc a:focus-visible,.te8-links a:focus-visible,.te8-ct a:focus-visible,.te8-bar a:focus-visible{outline:2px solid #58d27d;outline-offset:3px;border-radius:6px}
+.te8-soc img{width:18px;height:18px}
+.te8 h4{position:relative;font-size:16px;font-weight:600;color:#fff;margin:0 0 24px;padding-bottom:12px}
+.te8 h4:after{content:"";position:absolute;left:0;bottom:0;width:32px;height:3px;border-radius:3px;background:linear-gradient(90deg,#2fae5a,#58d27d)}
+.te8-links li{margin:0 0 13px}
+.te8-links a{position:relative;display:inline-block;font-size:14px;color:#b9d2c1;padding-bottom:2px;transition:color .3s,transform .3s}
+.te8-links a:after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:#58d27d;transition:width .35s}
+.te8-links a:hover{color:#fff;transform:translateX(4px)}
+.te8-links a:hover:after{width:100%}
+.te8-ct li{display:flex;align-items:flex-start;gap:14px;margin:0 0 20px}
+.te8-ic{flex:0 0 40px;width:40px;height:40px;border-radius:10px;background:rgba(47,174,90,.14);border:1px solid rgba(88,210,125,.25);display:grid;place-items:center;overflow:hidden;transition:background .3s}
+.te8-ic img{width:20px;height:20px}
+.te8-ct li:hover .te8-ic{background:rgba(47,174,90,.3)}
+.te8-ct strong{display:block;font-size:14px;font-weight:600;color:#fff;margin:0 0 2px}
+.te8-ct span,.te8-ct a{font-size:14px;line-height:1.6;color:#b9d2c1;word-break:break-word}
+.te8-ct a:hover{color:#58d27d}
+.te8-bar{margin-top:44px;border-top:1px solid rgba(255,255,255,.12);padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.te8-bar p{margin:0;font-size:13px;color:#93ad9b}
+.te8-bar nav{display:flex;gap:24px;flex-wrap:wrap}
+.te8-bar nav a{font-size:13px;color:#93ad9b;transition:color .3s}
+.te8-bar nav a:hover{color:#58d27d}
+.te8-line{position:absolute;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,transparent,#58d27d,transparent);background-size:200% 100%;animation:te8s 6s linear infinite}
+@keyframes te8s{from{background-position:200% 0}to{background-position:-200% 0}}
+@media(max-width:900px){.te8-grid{grid-template-columns:1fr 1fr;gap:40px}.te8-grid>div:first-child{grid-column:1/-1}}
+@media(max-width:560px){.te8-in{padding:52px 20px 0}.te8-grid{grid-template-columns:1fr}.te8-bar{flex-direction:column;align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){.te8 *{animation:none!important;transition:none!important}}
+</style>
+<div class="te8-line"></div>
+<div class="te8-in">
+  <div class="te8-grid">
+    <div>
+      <a class="te8-logo" href="https://targetelevation.in/"><span class="te8-mark">TE</span><span class="te8-name">Target <b>Elevation</b></span></a>
+      <p class="te8-tag">TARGET. ELEVATE. GROW.</p>
+      <p class="te8-desc">An AI-driven digital growth agency helping ambitious businesses build connected marketing, sales and automation systems that turn attention into measurable business growth.</p>
+      <div class="te8-soc">
+        <a href="https://www.facebook.com/targetelevation" target="_blank" rel="noopener" aria-label="Facebook"><img src="https://target-elevation.vercel.app/images/icons/facebook.svg" width="18" height="18" alt=""></a>
+        <a href="https://www.instagram.com/targetelevation/" target="_blank" rel="noopener" aria-label="Instagram"><img src="https://target-elevation.vercel.app/images/icons/instagram.svg" width="18" height="18" alt=""></a>
+        <a href="#" aria-label="LinkedIn"><img src="https://target-elevation.vercel.app/images/icons/linkedin.svg" width="18" height="18" alt=""></a>
+        <a href="#" aria-label="YouTube"><img src="https://target-elevation.vercel.app/images/icons/youtube.svg" width="18" height="18" alt=""></a>
+      </div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul class="te8-links">
+        <li><a href="https://targetelevation.in/">Home</a></li>
+        <li><a href="https://targetelevation.in/services/">Services</a></li>
+        <li><a href="https://targetelevation.in/projects/">Our Work</a></li>
+        <li><a href="https://targetelevation.in/about-us/">About Us</a></li>
+        <li><a href="https://targetelevation.in/contact-us/">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get In Touch</h4>
+      <ul class="te8-ct">
+        <li><span class="te8-ic"><img src="https://target-elevation.vercel.app/images/icons/map-pin.svg" width="20" height="20" alt=""></span><div><strong>Location</strong><span>Chennai, Tamil Nadu, India</span></div></li>
+        <li><span class="te8-ic"><img src="https://target-elevation.vercel.app/images/icons/mail.svg" width="20" height="20" alt=""></span><div><strong>Email</strong><a href="mailto:targetelevation@gmail.com">targetelevation@gmail.com</a></div></li>
+        <li><span class="te8-ic"><img src="https://target-elevation.vercel.app/images/icons/phone.svg" width="20" height="20" alt=""></span><div><strong>Phone</strong><a href="tel:+916379339909">+91 63793 39909</a></div></li>
+      </ul>
+    </div>
+  </div>
+  <div class="te8-bar">
+    <p>© 2026 Target Elevation. All rights reserved.</p>
+    <nav aria-label="Legal"><a href="https://targetelevation.in/privacy-policy/">Privacy Policy</a><a href="https://targetelevation.in/terms-and-conditions/">Terms &amp; Conditions</a><a href="https://targetelevation.in/cookie-policy/">Cookie Policy</a></nav>
+  </div>
+</div>
+</footer>
+<!-- ... to here. ======================================================= -->
+
+</body>
+</html>
