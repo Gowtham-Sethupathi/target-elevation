@@ -38,7 +38,7 @@
 .te8-soc{display:flex;gap:12px}
 .te8-soc a{width:40px;height:40px;flex:none;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);display:grid;place-items:center;transition:transform .3s,background .3s,border-color .3s}
 .te8-soc a:hover{transform:translateY(-5px);background:#1f8f45;border-color:#58d27d}
-.te8-soc a:focus-visible,.te8-links a:focus-visible,.te8-ct a:focus-visible,.te8-bar a:focus-visible{outline:2px solid #58d27d;outline-offset:3px;border-radius:6px}
+.te8-soc a:focus-visible,.te8-links a:focus-visible,.te8-ct a:focus-visible{outline:2px solid #58d27d;outline-offset:3px;border-radius:6px}
 .te8-soc img{width:18px;height:18px}
 .te8 h4{position:relative;font-size:16px;font-weight:600;color:#fff;margin:0 0 24px;padding-bottom:12px}
 .te8 h4:after{content:"";position:absolute;left:0;bottom:0;width:32px;height:3px;border-radius:3px;background:linear-gradient(90deg,#2fae5a,#58d27d)}
@@ -56,9 +56,6 @@
 .te8-ct a:hover{color:#58d27d}
 .te8-bar{margin-top:44px;border-top:1px solid rgba(255,255,255,.12);padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 .te8-bar p{margin:0;font-size:13px;color:#93ad9b}
-.te8-bar nav{display:flex;gap:24px;flex-wrap:wrap}
-.te8-bar nav a{font-size:13px;color:#93ad9b;transition:color .3s}
-.te8-bar nav a:hover{color:#58d27d}
 .te8-line{position:absolute;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,transparent,#58d27d,transparent);background-size:200% 100%;animation:te8s 6s linear infinite}
 @keyframes te8s{from{background-position:200% 0}to{background-position:-200% 0}}
 @media(max-width:900px){.te8-grid{grid-template-columns:1fr 1fr;gap:40px}.te8-grid>div:first-child{grid-column:1/-1}}
@@ -100,7 +97,6 @@
   </div>
   <div class="te8-bar">
     <p>© 2026 Target Elevation. All rights reserved.</p>
-    <nav aria-label="Legal"><a href="https://targetelevation.in/privacy-policy/">Privacy Policy</a><a href="https://targetelevation.in/terms-and-conditions/">Terms &amp; Conditions</a><a href="https://targetelevation.in/cookie-policy/">Cookie Policy</a></nav>
   </div>
 </div>
 </footer>
