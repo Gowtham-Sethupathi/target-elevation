@@ -1,0 +1,270 @@
+<!--
+TARGET ELEVATION HOMEPAGE: 7 SECTIONS
+- Each section is fully self-contained: its own <style> block, classes prefixed (te1-, te2- ...). No global CSS.
+- Paste any section on its own. Add this ONE tag to your <head> once for Poppins:
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+- Change any <img src="..."> to swap photos or icons. Sizes are set by width/height attributes.
+- Icons use Iconify (api.iconify.design); change the icon name or the color=%23167a3a value in the URL.
+-->
+
+<!-- ============ SECTION 1: HERO ============ -->
+<section class="te1">
+<style>
+.te1{position:relative;overflow:hidden;font-family:'Poppins',sans-serif;background:#fff;color:#0d1f14;box-sizing:border-box}
+.te1 *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te1-bg{position:absolute;inset:0;background:#10301d}
+.te1-bg img{width:100%;height:100%;object-fit:cover;display:block;opacity:.95}
+.te1-fade{position:absolute;inset:0;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.94) 42%,rgba(255,255,255,.2) 62%,rgba(8,30,16,.55) 100%)}
+.te1-in{position:relative;max-width:1240px;margin:auto;padding:72px 32px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;min-height:440px}
+.te1-eye{font-size:13px;font-weight:600;color:#167a3a;letter-spacing:2px;margin:0 0 14px}
+.te1 h1{font-size:clamp(34px,4.6vw,56px);line-height:1.1;font-weight:700;margin:0 0 20px}
+.te1 h1 span{color:#167a3a}
+.te1 p{font-size:16px;line-height:1.7;color:#2b3a31;max-width:560px;margin:0 0 20px}
+.te1-tag{font-size:14px;font-weight:500;letter-spacing:3px;color:#1b2a21}
+.te1-logo{justify-self:end;background:rgba(10,28,18,.78);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:30px 36px;text-align:center;color:#fff;animation:te1f 5s ease-in-out infinite}
+.te1-logo b{display:flex;align-items:center;gap:12px;justify-content:center;font-size:28px;font-weight:600;line-height:1.1;text-align:left}
+.te1-logo small{display:block;margin-top:14px;font-size:13px;color:#d6efdf}
+.te1-a{animation:te1u .9s cubic-bezier(.2,.7,.2,1) both}.te1-b{animation:te1u .9s .15s cubic-bezier(.2,.7,.2,1) both}.te1-c{animation:te1u .9s .3s cubic-bezier(.2,.7,.2,1) both}
+@keyframes te1u{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes te1f{50%{transform:translateY(-10px)}}
+@media(max-width:860px){.te1-in{grid-template-columns:1fr;padding:48px 20px}.te1-logo{justify-self:start}.te1-fade{background:linear-gradient(180deg,#fff 55%,rgba(255,255,255,.5))}}
+@media(prefers-reduced-motion:reduce){.te1 *{animation:none!important}}
+</style>
+<div class="te1-bg"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&h=600&q=80" width="1600" height="600" alt="Modern office"></div>
+<div class="te1-fade"></div>
+<div class="te1-in">
+  <div>
+    <p class="te1-eye te1-a">ABOUT TARGET ELEVATION</p>
+    <h1 class="te1-b">We Build the Systems Behind <span>Digital Growth.</span></h1>
+    <p class="te1-c">Target Elevation is a digital growth agency bringing marketing, branding, technology, sales systems and AI-powered automation together to help businesses move forward with clarity and purpose.</p>
+    <div class="te1-tag te1-c">Strategy. Creativity. Technology. Growth.</div>
+  </div>
+  <div class="te1-logo">
+    <b><img src="https://api.iconify.design/lucide:mountain.svg?color=%2358d27d" width="54" height="54" alt="Logo icon"><span>Target<br>Elevation</span></b>
+    <small>Strategy, Creativity, Technology, Growth.</small>
+  </div>
+</div>
+</section>
+
+<!-- ============ SECTION 2: WHY WE EXIST ============ -->
+<section class="te2">
+<style>
+.te2{font-family:'Poppins',sans-serif;background:linear-gradient(180deg,#fff,#f3faf5);color:#0d1f14;box-sizing:border-box}
+.te2 *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te2-in{max-width:1240px;margin:auto;padding:80px 32px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.te2-eye{font-size:13px;font-weight:600;color:#167a3a;letter-spacing:2px;margin:0 0 14px}
+.te2 h2{font-size:clamp(30px,3.6vw,42px);line-height:1.15;font-weight:700;margin:0 0 22px}
+.te2 h2 span{color:#167a3a;display:block}
+.te2 p{font-size:15px;line-height:1.75;color:#33443a;margin:0 0 10px}
+.te2 .te2-gap{margin-top:22px}
+.te2 strong{color:#0d1f14;font-weight:600}
+.te2-img{position:relative}
+.te2-img:before{content:"";position:absolute;right:-18px;top:-18px;width:70%;height:75%;background:#d9f0e1;border-radius:20px;z-index:0}
+.te2-img img{position:relative;z-index:1;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:20px;display:block;box-shadow:0 24px 50px rgba(10,60,30,.22);transition:transform .6s}
+.te2-img:hover img{transform:scale(1.025) rotate(-.6deg)}
+.te2-img i{position:absolute;left:-22px;bottom:-22px;width:90px;height:90px;border:3px dashed #7ed199;border-radius:50%;animation:te2s 14s linear infinite;z-index:0}
+@keyframes te2s{to{transform:rotate(360deg)}}
+@media(max-width:860px){.te2-in{grid-template-columns:1fr;padding:56px 20px}}
+@media(prefers-reduced-motion:reduce){.te2 *{animation:none!important}}
+</style>
+<div class="te2-in">
+  <div>
+    <p class="te2-eye">WHY WE EXIST</p>
+    <h2>Businesses Don't Need More Digital Noise. <span>They Need Better Direction.</span></h2>
+    <p>Digital marketing has become more accessible than ever.</p>
+    <p>But having access to more platforms, more tools and more channels doesn't automatically create growth.</p>
+    <p class="te2-gap">Businesses can run advertisements without a clear strategy.<br>Build websites without a conversion journey.<br>Generate leads without a proper sales system.<br>Create content without a clear brand direction.</p>
+    <p class="te2-gap"><strong>We believe these pieces should work together.</strong></p>
+    <p class="te2-gap"><strong>Target Elevation</strong> was built around that idea — creating connected digital systems where every activity has a purpose and every part contributes to the bigger business objective.</p>
+  </div>
+  <div class="te2-img"><i></i><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&h=680&q=80" width="900" height="680" alt="Team collaborating"></div>
+</div>
+</section>
+
+<!-- ============ SECTION 3: OUR MISSION ============ -->
+<section class="te3">
+<style>
+.te3{font-family:'Poppins',sans-serif;background:#f7fcf8;color:#0d1f14;overflow:hidden;box-sizing:border-box}
+.te3 *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te3-in{max-width:1400px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:70px 32px 70px 0}
+.te3-img{position:relative}
+.te3-img:after{content:"";position:absolute;right:-16px;bottom:-16px;width:40%;height:40%;background:#bfe6cb;border-radius:0 0 18px 0;z-index:0}
+.te3-img img{position:relative;z-index:1;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:0 20px 20px 0;box-shadow:0 24px 50px rgba(10,60,30,.22);animation:te3z 9s ease-in-out infinite alternate}
+@keyframes te3z{to{transform:scale(1.03)}}
+.te3-eye{font-size:13px;font-weight:600;color:#167a3a;letter-spacing:2px;margin:0 0 12px}
+.te3 h2{font-size:clamp(28px,3.2vw,38px);line-height:1.2;font-weight:700;margin:0 0 22px;max-width:520px}
+.te3 p{font-size:15px;line-height:1.75;color:#33443a;margin:0 0 14px;max-width:520px}
+.te3 strong{color:#0d1f14;font-weight:600}
+.te3-bar{width:64px;height:4px;border-radius:4px;background:linear-gradient(90deg,#167a3a,#58d27d);margin-bottom:22px;transform-origin:left;animation:te3b 1.4s .2s both}
+@keyframes te3b{from{transform:scaleX(0)}}
+@media(max-width:860px){.te3-in{grid-template-columns:1fr;padding:0 20px 56px}.te3-img img{border-radius:0 0 20px 20px}}
+@media(prefers-reduced-motion:reduce){.te3 *{animation:none!important}}
+</style>
+<div class="te3-in">
+  <div class="te3-img"><img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=900&h=680&q=80" width="900" height="680" alt="Dart hitting target"></div>
+  <div>
+    <p class="te3-eye">OUR MISSION</p>
+    <div class="te3-bar"></div>
+    <h2>Make Digital Growth Simpler, Smarter and More Connected.</h2>
+    <p>Our mission is to help businesses make better use of digital marketing and technology by bringing the right strategy, creativity and systems together.</p>
+    <p>We don't believe growth comes from doing everything.</p>
+    <p><strong>We believe it comes from doing the right things, in the right order, with the right system behind them.</strong></p>
+  </div>
+</div>
+</section>
+
+<!-- ============ SECTION 4: OUR BELIEFS ============ -->
+<section class="te4">
+<style>
+.te4{font-family:'Poppins',sans-serif;background:linear-gradient(180deg,#eef8f1,#f7fcf8);color:#0d1f14;box-sizing:border-box}
+.te4 *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te4-in{max-width:1240px;margin:auto;padding:72px 32px}
+.te4-eye{font-size:13px;font-weight:600;color:#167a3a;letter-spacing:2px;margin:0 0 10px}
+.te4 h2{font-size:clamp(28px,3.2vw,38px);font-weight:700;margin:0 0 36px}
+.te4-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.te4-card{position:relative;background:#fff;border:1px solid #e1efe5;border-radius:16px;padding:26px;box-shadow:0 8px 24px rgba(10,60,30,.07);transition:transform .35s,box-shadow .35s,border-color .35s;overflow:hidden}
+.te4-card:before{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:linear-gradient(90deg,#167a3a,#58d27d);transition:width .45s}
+.te4-card:hover{transform:translateY(-8px);box-shadow:0 22px 44px rgba(10,60,30,.16);border-color:#9ad6ad}
+.te4-card:hover:before{width:100%}
+.te4-top{display:flex;align-items:flex-end;gap:14px;margin-bottom:16px}
+.te4-ic{width:52px;height:52px;border-radius:14px;background:#e4f5ea;display:grid;place-items:center;transition:transform .4s}
+.te4-card:hover .te4-ic{transform:rotate(-8deg) scale(1.1)}
+.te4-n{font-size:15px;font-weight:600;color:#167a3a}
+.te4 h3{font-size:17px;font-weight:600;margin:0 0 6px;line-height:1.3}
+.te4 h4{font-size:15px;font-weight:500;margin:0 0 12px;line-height:1.45;color:#1b2a21}
+.te4 p{font-size:14px;line-height:1.7;color:#4a5b51;margin:0}
+@media(max-width:980px){.te4-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.te4-grid{grid-template-columns:1fr}.te4-in{padding:52px 20px}}
+@media(prefers-reduced-motion:reduce){.te4 *{transition:none!important}}
+</style>
+<div class="te4-in">
+  <p class="te4-eye">OUR BELIEFS</p>
+  <h2>The Principles Behind How We Work.</h2>
+  <div class="te4-grid">
+    <div class="te4-card"><div class="te4-top"><div class="te4-ic"><img src="https://api.iconify.design/lucide:target.svg?color=%23167a3a" width="30" height="30" alt="Strategy icon"></div><span class="te4-n">01</span></div><h3>Strategy Before Execution</h3><h4>Know Where You're Going Before You Start Moving.</h4><p>Every campaign, website or system should begin with a clear understanding of the business objective.</p></div>
+    <div class="te4-card"><div class="te4-top"><div class="te4-ic"><img src="https://api.iconify.design/lucide:link.svg?color=%23167a3a" width="30" height="30" alt="Connect icon"></div><span class="te4-n">02</span></div><h3>Everything Should Connect</h3><h4>Growth Happens Between the Pieces.</h4><p>Marketing, branding, websites, sales and technology should work together instead of operating as isolated activities.</p></div>
+    <div class="te4-card"><div class="te4-top"><div class="te4-ic"><img src="https://api.iconify.design/lucide:users.svg?color=%23167a3a" width="30" height="30" alt="Customers icon"></div><span class="te4-n">03</span></div><h3>Customers Come First</h3><h4>Build Around How People Actually Buy.</h4><p>We focus on customer intent, behaviour and decision-making rather than simply chasing clicks and impressions.</p></div>
+    <div class="te4-card"><div class="te4-top"><div class="te4-ic"><img src="https://api.iconify.design/lucide:settings.svg?color=%23167a3a" width="30" height="30" alt="Technology icon"></div><span class="te4-n">04</span></div><h3>Technology Should Create Leverage</h3><h4>Use Technology to Do More With Less.</h4><p>AI and automation should reduce repetitive work, improve efficiency and give businesses more room to focus on what matters.</p></div>
+    <div class="te4-card"><div class="te4-top"><div class="te4-ic"><img src="https://api.iconify.design/lucide:bar-chart-3.svg?color=%23167a3a" width="30" height="30" alt="Outcomes icon"></div><span class="te4-n">05</span></div><h3>Outcomes Over Vanity</h3><h4>Attention Is Not the Destination.</h4><p>Traffic, reach and engagement matter, but the ultimate goal is creating meaningful business opportunities and growth.</p></div>
+    <div class="te4-card"><div class="te4-top"><div class="te4-ic"><img src="https://api.iconify.design/lucide:trending-up.svg?color=%23167a3a" width="30" height="30" alt="Future icon"></div><span class="te4-n">06</span></div><h3>Build for What Comes Next</h3><h4>Don't Build Something You'll Outgrow.</h4><p>The systems we create should be capable of evolving as the business, audience and goals change.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ============ SECTION 5: OUR WAY OF THINKING ============ -->
+<section class="te5">
+<style>
+.te5{position:relative;overflow:hidden;font-family:'Poppins',sans-serif;background:#07290f;color:#fff;box-sizing:border-box}
+.te5 *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te5-bg{position:absolute;inset:0}
+.te5-bg img{width:100%;height:100%;object-fit:cover;display:block}
+.te5-ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,32,14,.96) 0%,rgba(6,42,20,.88) 50%,rgba(6,42,20,.7) 100%)}
+.te5-in{position:relative;max-width:1340px;margin:auto;padding:72px 32px}
+.te5-eye{font-size:13px;font-weight:600;color:#58d27d;letter-spacing:2px;margin:0 0 10px}
+.te5 h2{font-size:clamp(28px,3.4vw,40px);line-height:1.2;font-weight:700;margin:0 0 14px;max-width:520px;color:#fff !important}
+.te5-sub{font-size:15px;line-height:1.7;color:#d3e8da;max-width:520px;margin:0 0 44px}
+.te5-flow{display:flex;gap:14px;align-items:stretch;flex-wrap:wrap;justify-content:center}
+.te5-box{position:relative;flex:1 1 110px;max-width:150px;min-width:104px;background:#fff;color:#0d1f14;border-radius:12px;padding:16px 8px 14px;text-align:center;box-shadow:0 10px 26px rgba(0,0,0,.3);transition:transform .35s,box-shadow .35s;animation:te5p 4.5s ease-in-out infinite}
+.te5-box:hover{transform:translateY(-8px);box-shadow:0 18px 36px rgba(88,210,125,.35)}
+.te5-box img{display:block;margin:0 auto 10px}
+.te5-box span{display:block;font-size:13px;font-weight:600;line-height:1.3;color:#14502a}
+.te5-box:not(:last-child):after{content:"";position:absolute;right:-12px;top:50%;width:10px;height:10px;border-top:2px solid #58d27d;border-right:2px solid #58d27d;transform:translateY(-50%) rotate(45deg)}
+.te5-box:nth-child(2){animation-delay:.4s}.te5-box:nth-child(3){animation-delay:.8s}.te5-box:nth-child(4){animation-delay:1.2s}.te5-box:nth-child(5){animation-delay:1.6s}.te5-box:nth-child(6){animation-delay:2s}.te5-box:nth-child(7){animation-delay:2.4s}.te5-box:nth-child(8){animation-delay:2.8s}.te5-box:nth-child(9){animation-delay:3.2s}
+@keyframes te5p{0%,70%,100%{box-shadow:0 10px 26px rgba(0,0,0,.3)}85%{box-shadow:0 0 0 4px rgba(88,210,125,.55),0 10px 26px rgba(0,0,0,.3)}}
+.te5-end{text-align:center;font-size:16px;font-weight:500;margin:34px 0 0;color:#fff}
+@media(max-width:700px){.te5-in{padding:52px 20px}.te5-box:after{display:none}}
+@media(prefers-reduced-motion:reduce){.te5 *{animation:none!important;transition:none!important}}
+</style>
+<div class="te5-bg"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&h=700&q=80" width="1600" height="700" alt="Office background"></div>
+<div class="te5-ov"></div>
+<div class="te5-in">
+  <p class="te5-eye">OUR WAY OF THINKING</p>
+  <h2>From Individual Activities to One Growth System.</h2>
+  <p class="te5-sub">We look at the complete customer journey rather than focusing on one isolated marketing activity.</p>
+  <div class="te5-flow">
+    <div class="te5-box"><img src="https://api.iconify.design/lucide:target.svg?color=%23167a3a" width="28" height="28" alt="Business goal"><span>BUSINESS GOAL</span></div>
+    <div class="te5-box"><img src="https://api.iconify.design/lucide:users.svg?color=%23167a3a" width="28" height="28" alt="Audience"><span>AUDIENCE</span></div>
+    <div class="te5-box"><img src="https://api.iconify.design/lucide:file-text.svg?color=%23167a3a" width="28" height="28" alt="Strategy"><span>STRATEGY</span></div>
+    <div class="te5-box"><img src="https://api.iconify.design/lucide:monitor.svg?color=%23167a3a" width="28" height="28" alt="Digital experience"><span>DIGITAL EXPERIENCE</span></div>
+    <div class="te5-box"><img src="https://api.iconify.design/lucide:filter.svg?color=%23167a3a" width="28" height="28" alt="Lead or customer"><span>LEAD / CUSTOMER</span></div>
+    <div class="te5-box"><img src="https://api.iconify.design/lucide:bar-chart-3.svg?color=%23167a3a" width="28" height="28" alt="Sales system"><span>SALES SYSTEM</span></div>
+    <div class="te5-box"><img src="https://api.iconify.design/lucide:settings.svg?color=%23167a3a" width="28" height="28" alt="Automation"><span>AUTOMATION</span></div>
+    <div class="te5-box"><img src="https://api.iconify.design/lucide:activity.svg?color=%23167a3a" width="28" height="28" alt="Measurement"><span>MEASUREMENT</span></div>
+    <div class="te5-box"><img src="https://api.iconify.design/lucide:trending-up.svg?color=%23167a3a" width="28" height="28" alt="Growth"><span>GROWTH</span></div>
+  </div>
+  <p class="te5-end">When every part has a role, growth becomes easier to understand, measure and improve.</p>
+</div>
+</section>
+
+<!-- ============ SECTION 6: WHY TARGET ELEVATION ============ -->
+<section class="te6">
+<style>
+.te6{font-family:'Poppins',sans-serif;background:#fff;color:#0d1f14;box-sizing:border-box}
+.te6 *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te6-in{max-width:1240px;margin:auto;padding:80px 32px;display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+.te6-eye{font-size:13px;font-weight:600;color:#167a3a;letter-spacing:2px;margin:0 0 12px}
+.te6 h2{font-size:clamp(28px,3.2vw,38px);line-height:1.2;font-weight:700;margin:0 0 24px}
+.te6 .te6-l p{font-size:15px;line-height:1.8;color:#33443a;margin:0 0 6px}
+.te6 .te6-l p+p+p+p{margin-top:16px}
+.te6-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.te6-card{background:#fff;border:1px solid #e1efe5;border-radius:16px;padding:24px;box-shadow:0 8px 24px rgba(10,60,30,.07);transition:transform .35s,box-shadow .35s,background .35s}
+.te6-card:hover{transform:translateY(-8px);box-shadow:0 22px 44px rgba(10,60,30,.16);background:#f3faf5}
+.te6-top{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.te6-ic{width:46px;height:46px;border-radius:12px;background:#e4f5ea;display:grid;place-items:center;transition:transform .4s}
+.te6-card:hover .te6-ic{transform:scale(1.12) rotate(-8deg)}
+.te6-n{font-size:15px;font-weight:600;color:#167a3a}
+.te6 h3{font-size:16px;font-weight:600;margin:0 0 8px}
+.te6 .te6-card p{font-size:14px;line-height:1.65;color:#4a5b51;margin:0}
+@media(max-width:900px){.te6-in{grid-template-columns:1fr;padding:56px 20px}}
+@media(max-width:560px){.te6-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.te6 *{transition:none!important}}
+</style>
+<div class="te6-in">
+  <div class="te6-l">
+    <p class="te6-eye">WHY TARGET ELEVATION</p>
+    <h2>We're Built to Think Beyond the Deliverable.</h2>
+    <p>A website is more than a website.</p>
+    <p>An advertisement is more than an advertisement.</p>
+    <p>A brand is more than a logo.</p>
+    <p>We look at what each piece needs to accomplish within the larger business system.</p>
+  </div>
+  <div class="te6-grid">
+    <div class="te6-card"><div class="te6-top"><div class="te6-ic"><img src="https://api.iconify.design/lucide:lightbulb.svg?color=%23167a3a" width="26" height="26" alt="Business-first icon"></div><span class="te6-n">01</span></div><h3>Business-First Thinking</h3><p>We start with the business objective instead of starting with a platform or service.</p></div>
+    <div class="te6-card"><div class="te6-top"><div class="te6-ic"><img src="https://api.iconify.design/lucide:layers.svg?color=%23167a3a" width="26" height="26" alt="Capabilities icon"></div><span class="te6-n">02</span></div><h3>Connected Capabilities</h3><p>Marketing, creative, technology and sales systems can work together under one partner.</p></div>
+    <div class="te6-card"><div class="te6-top"><div class="te6-ic"><img src="https://api.iconify.design/lucide:settings.svg?color=%23167a3a" width="26" height="26" alt="Innovation icon"></div><span class="te6-n">03</span></div><h3>Practical Innovation</h3><p>We use AI, automation and technology where they create real value—not simply because they're new.</p></div>
+    <div class="te6-card"><div class="te6-top"><div class="te6-ic"><img src="https://api.iconify.design/lucide:bar-chart-3.svg?color=%23167a3a" width="26" height="26" alt="Growth icon"></div><span class="te6-n">04</span></div><h3>Growth Mindset</h3><p>We continuously look for opportunities to improve, optimize and build on what already works.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ============ SECTION 7: CALL TO ACTION ============ -->
+<section class="te7">
+<style>
+.te7{position:relative;overflow:hidden;font-family:'Poppins',sans-serif;background:#07290f;color:#fff;box-sizing:border-box}
+.te7 *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te7-bg{position:absolute;inset:0}
+.te7-bg img{width:100%;height:100%;object-fit:cover;object-position:right center;display:block}
+.te7-ov{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,32,14,.96) 0%,rgba(6,42,20,.85) 45%,rgba(6,42,20,.1) 100%)}
+.te7-in{position:relative;max-width:1240px;margin:auto;padding:80px 32px}
+.te7-eye{font-size:13px;font-weight:600;color:#58d27d;letter-spacing:2px;margin:0 0 12px}
+.te7 h2{font-size:clamp(30px,3.6vw,44px);line-height:1.15;font-weight:700;margin:0 0 18px;max-width:520px;color:#fff !important}
+.te7 p.te7-p{font-size:16px;line-height:1.7;color:#d3e8da;max-width:540px;margin:0 0 28px}
+.te7-btn{display:inline-block;position:relative;overflow:hidden;background:#2fae5a;color:#fff;font-size:15px;font-weight:600;text-decoration:none;padding:15px 30px;border-radius:10px;box-shadow:0 10px 26px rgba(47,174,90,.4);transition:transform .3s,box-shadow .3s;animation:te7p 2.8s infinite}
+.te7-btn:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(47,174,90,.55)}
+.te7-btn:after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .7s}
+.te7-btn:hover:after{left:130%}
+@keyframes te7p{0%{box-shadow:0 0 0 0 rgba(47,174,90,.55)}70%,100%{box-shadow:0 0 0 16px rgba(47,174,90,0)}}
+.te7-tag{display:block;margin-top:34px;font-size:14px;font-weight:500;letter-spacing:3px;color:#e6f5ec}
+@media(max-width:800px){.te7-in{padding:56px 20px}.te7-ov{background:rgba(6,42,20,.9)}}
+@media(prefers-reduced-motion:reduce){.te7 *{animation:none!important;transition:none!important}}
+</style>
+<div class="te7-bg"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&h=640&q=80" width="1600" height="640" alt="Corporate building"></div>
+<div class="te7-ov"></div>
+<div class="te7-in">
+  <p class="te7-eye">READY TO ELEVATE?</p>
+  <h2>Let's Build What's Next for Your Business.</h2>
+  <p class="te7-p">Whether you're building from the ground up, trying to improve what's already working or looking for a better way to grow, Target Elevation is ready to build the system with you.</p>
+  <a class="te7-btn" href="#contact">Talk to a Growth Expert &rarr;</a>
+  <span class="te7-tag">Strategy. Creativity. Technology. Growth.</span>
+</div>
+</section>

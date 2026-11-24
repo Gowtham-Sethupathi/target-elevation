@@ -1,0 +1,422 @@
+<!-- ============================================================
+ TARGET ELEVATION HOME PAGE
+ - Each section has its OWN <style> block, scoped to its class (no global CSS)
+ - Every image/icon is a normal <img src="..."> tag. Change the src later.
+ - Icons: https://api.iconify.design/lucide/NAME.svg?color=%23167a35  (swap NAME)
+ - Stock photos: Unsplash. Replace the URL with your own file any time.
+ - No header / footer included.
+============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ===================== 1. HERO ===================== -->
+<section class="te-hero">
+<style>
+.te-hero{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;background:linear-gradient(110deg,#fff 0%,#f4faf5 55%,#e4f2e7 100%);padding:60px 5%;overflow:hidden;box-sizing:border-box}
+.te-hero *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te-hero .in{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+.te-hero .tag{color:#167a35;font-weight:600;font-size:13px;letter-spacing:1.5px;margin:0 0 14px;animation:te-h-up .8s both}
+.te-hero h1{font-size:clamp(32px,4.4vw,52px);line-height:1.12;font-weight:700;margin:0 0 18px;animation:te-h-up .8s .1s both}
+.te-hero h1 span{color:#167a35;display:block}
+.te-hero p.d{font-size:16px;line-height:1.7;max-width:520px;margin:0 0 26px;animation:te-h-up .8s .2s both}
+.te-hero .btns{display:flex;gap:14px;flex-wrap:wrap;animation:te-h-up .8s .3s both}
+.te-hero .b{padding:14px 26px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;display:inline-flex;gap:8px;align-items:center;transition:.3s}
+.te-hero .b1{background:#167a35;color:#fff;box-shadow:0 8px 22px rgba(22,122,53,.3)}
+.te-hero .b1:hover{background:#0f5a28;transform:translateY(-3px)}
+.te-hero .b2{border:1.5px solid #167a35;color:#167a35;background:#fff}
+.te-hero .b2:hover{background:#167a35;color:#fff;transform:translateY(-3px)}
+.te-hero .sl{margin-top:22px;font-size:15px;animation:te-h-up .8s .4s both}
+.te-hero .vis{position:relative;animation:te-h-up 1s .3s both}
+.te-hero .lap{width:100%;border-radius:14px;box-shadow:0 30px 60px rgba(0,0,0,.2);display:block;animation:te-h-float 6s ease-in-out infinite}
+.te-hero .chips{position:absolute;left:-30px;top:20px;display:flex;flex-direction:column;gap:8px}
+.te-hero .chip{background:#fff;border-radius:8px;padding:8px 14px;font-size:13px;font-weight:500;display:flex;align-items:center;gap:8px;box-shadow:0 6px 18px rgba(0,0,0,.12);animation:te-h-in .6s both}
+.te-hero .chip img{width:18px;height:18px}
+.te-hero .chip:nth-child(1){animation-delay:.6s}.te-hero .chip:nth-child(2){animation-delay:.75s}.te-hero .chip:nth-child(3){animation-delay:.9s}.te-hero .chip:nth-child(4){animation-delay:1.05s}.te-hero .chip:nth-child(5){animation-delay:1.2s}.te-hero .chip:nth-child(6){animation-delay:1.35s}
+.te-hero .stat{position:absolute;right:6%;bottom:-18px;background:#fff;border-radius:12px;padding:12px 18px;box-shadow:0 10px 26px rgba(0,0,0,.15);font-size:13px;animation:te-h-float 5s 1s ease-in-out infinite}
+.te-hero .stat b{display:block;font-size:17px;color:#167a35}
+@keyframes te-h-up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes te-h-in{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:none}}
+@keyframes te-h-float{50%{transform:translateY(-12px)}}
+@media(max-width:850px){.te-hero .in{grid-template-columns:1fr}.te-hero .chips{display:none}}
+@media(prefers-reduced-motion:reduce){.te-hero *{animation:none!important}}
+.te-hero{position:relative;background:radial-gradient(circle at 88% 15%,rgba(46,164,79,.2),transparent 45%),radial-gradient(circle at 5% 95%,rgba(22,122,53,.1),transparent 40%),#fff;padding:80px 5%}
+.te-hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(22,122,53,.18) 1px,transparent 1px);background-size:24px 24px;-webkit-mask-image:linear-gradient(90deg,transparent,#000);mask-image:linear-gradient(90deg,transparent,#000)}
+.te-hero .in{position:relative}
+.te-hero h1{color:#0d2b17;letter-spacing:-1px}
+.te-hero h1 span{background:linear-gradient(90deg,#167a35,#3cc062);-webkit-background-clip:text;background-clip:text;color:transparent}
+.te-hero .b1{background:linear-gradient(135deg,#1a9040,#0f5a28)}
+.te-hero .lap{border:6px solid #fff;border-radius:18px}
+.te-hero .chip{border:1px solid #e3efe6}
+.te-hero:not(.te-in) *{animation-play-state:paused!important}
+</style>
+<div class="in">
+  <div>
+    <p class="tag">AI-DRIVEN DIGITAL GROWTH AGENCY</p>
+    <h1>Build a Digital Growth System That Moves <span>Your Business Forward.</span></h1>
+    <p class="d">We bring marketing, branding, websites, sales systems and AI-powered automation together to help businesses attract the right audience, generate better opportunities and turn growth into a repeatable system.</p>
+    <div class="btns"><a class="b b1" href="#">Talk to a Growth Expert →</a><a class="b b2" href="#">Explore Our Services</a></div>
+    <p class="sl">Strategy. Creativity. Technology. Growth.</p>
+  </div>
+  <div class="vis">
+    <div class="chips">
+      <div class="chip"><img src="https://api.iconify.design/logos/google-ads.svg" alt="">Google Ads</div>
+      <div class="chip"><img src="https://api.iconify.design/logos/meta-icon.svg" alt="">Meta Ads</div>
+      <div class="chip"><img src="https://api.iconify.design/lucide/monitor.svg?color=%23167a35" alt="">Website</div>
+      <div class="chip"><img src="https://api.iconify.design/lucide/pen-tool.svg?color=%23167a35" alt="">Branding</div>
+      <div class="chip"><img src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23167a35" alt="">Sales System</div>
+      <div class="chip"><img src="https://api.iconify.design/lucide/bot.svg?color=%23167a35" alt="">AI &amp; Automation</div>
+    </div>
+    <img class="lap" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=600&fit=crop" width="900" height="600" alt="Growth dashboard on laptop">
+    <div class="stat"><b>12.4K</b>Visitors ↑ 40%</div>
+  </div>
+</div>
+<script>(function(){var s=document.currentScript.parentElement;if(!('IntersectionObserver' in window)){s.classList.add('te-in');return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add('te-in');o.disconnect()}})},{threshold:.12}).observe(s)})();</script>
+</section>
+
+<!-- ===================== 2. MORE THAN MARKETING ===================== -->
+<section class="te-sys">
+<style>
+.te-sys{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;background:linear-gradient(#f4faf5,#fff);padding:60px 5%;box-sizing:border-box}
+.te-sys *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te-sys .in{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 1.5fr;gap:36px}
+.te-sys .tag{color:#167a35;font-weight:600;font-size:13px;letter-spacing:1.5px;margin:0 0 12px}
+.te-sys h2{font-size:clamp(24px,3vw,34px);line-height:1.2;margin:0 0 16px;font-weight:700}
+.te-sys p{line-height:1.7;margin:0 0 10px;font-size:15px}
+.te-sys .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.te-sys .st{background:#fff;border:1px solid #dfeee2;border-radius:12px;padding:18px 12px;text-align:center;transition:.35s;position:relative;animation:te-s-pop .7s both}
+.te-sys .st:nth-child(2){animation-delay:.1s}.te-sys .st:nth-child(3){animation-delay:.2s}.te-sys .st:nth-child(4){animation-delay:.3s}.te-sys .st:nth-child(5){animation-delay:.4s}
+.te-sys .st:hover{transform:translateY(-8px);box-shadow:0 16px 30px rgba(22,122,53,.18);border-color:#167a35}
+.te-sys .st img{width:40px;height:40px;margin-bottom:10px;transition:.4s}
+.te-sys .st:hover img{transform:scale(1.2) rotate(-6deg)}
+.te-sys .st h4{font-size:13px;margin:0 0 6px;font-weight:600}
+.te-sys .st span{font-size:13px;color:#5b6b60;line-height:1.4;display:block}
+.te-sys .st:not(:last-child):after{content:"→";position:absolute;right:-14px;top:38px;color:#167a35;font-size:15px}
+.te-sys .bar{margin-top:22px;background:#d9efdc;border-radius:10px;text-align:center;padding:16px;font-weight:500;font-size:15px;position:relative;overflow:hidden}
+.te-sys .bar:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);animation:te-s-shine 4s infinite}
+@keyframes te-s-pop{from{opacity:0;transform:translateY(26px) scale(.95)}to{opacity:1;transform:none}}
+@keyframes te-s-shine{to{left:130%}}
+@media(max-width:1000px){.te-sys .in{grid-template-columns:1fr}.te-sys .steps{grid-template-columns:repeat(2,1fr)}.te-sys .st:after{display:none}}
+@media(prefers-reduced-motion:reduce){.te-sys *{animation:none!important}}
+.te-sys .bar{background:linear-gradient(90deg,#167a35,#2ea44f);color:#fff;border-radius:14px}
+.te-sys .st{border-radius:16px}
+.te-sys .st img{width:50px;height:50px;padding:11px;background:#eaf6ed;border-radius:14px}
+.te-sys .tag{display:inline-flex;align-items:center;background:#e7f5ea;color:#167a35;padding:6px 14px;border-radius:30px}
+.te-sys h2{letter-spacing:-.5px;color:#0d2b17}
+.te-sys .tag,.te-sys h2,.te-sys .sub{animation:te-sys-rv .8s both}
+.te-sys h2{animation-delay:.1s}.te-sys .sub{animation-delay:.2s}
+@keyframes te-sys-rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.te-sys:not(.te-in) *{animation-play-state:paused!important}
+</style>
+<div class="in">
+  <div>
+    <p class="tag">MORE THAN MARKETING</p>
+    <h2>Your Business Doesn’t Need More Marketing. It Needs a System That Works Together.</h2>
+    <p>Google Ads can bring traffic.<br>A website can capture attention.<br>A sales team can follow up.</p>
+    <p>But when these pieces work seperately, opportunities get lost.</p>
+    <p><b>Target Elevation</b> connects them into one digital growth system — designed to attract the right people, turn attention into enquiries, convert opportunities and create a foundation for scalable growth.</p>
+  </div>
+  <div>
+    <div class="steps">
+      <div class="st"><img src="https://api.iconify.design/lucide/megaphone.svg?color=%23167a35" width="40" height="40" alt=""><h4>01. ATTRACT</h4><span>Get in Front of the Right Audience</span></div>
+      <div class="st"><img src="https://api.iconify.design/lucide/users.svg?color=%23167a35" width="40" height="40" alt=""><h4>02. ENGAGE</h4><span>Make Your Brand Impossible to Ignore</span></div>
+      <div class="st"><img src="https://api.iconify.design/lucide/file-text.svg?color=%23167a35" width="40" height="40" alt=""><h4>03. CAPTURE</h4><span>Turn Interest Into Real Opportunities</span></div>
+      <div class="st"><img src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23167a35" width="40" height="40" alt=""><h4>04. CONVERT</h4><span>Build a Better Path From Lead to Customer</span></div>
+      <div class="st"><img src="https://api.iconify.design/lucide/settings.svg?color=%23167a35" width="40" height="40" alt=""><h4>05. AUTOMATE</h4><span>Let Technology Handle the Repetitive Work</span></div>
+    </div>
+    <div class="bar">Every part works better when the entire system works together.</div>
+  </div>
+</div>
+<script>(function(){var s=document.currentScript.parentElement;if(!('IntersectionObserver' in window)){s.classList.add('te-in');return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add('te-in');o.disconnect()}})},{threshold:.12}).observe(s)})();</script>
+</section>
+
+<!-- ===================== 3. WHY TARGET ELEVATION ===================== -->
+<section class="te-why">
+<style>
+.te-why{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;background:linear-gradient(#fff,#f4faf5);padding:60px 5%;box-sizing:border-box}
+.te-why *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te-why .in{max-width:1200px;margin:auto;display:grid;grid-template-columns:1fr 2fr;gap:36px}
+.te-why .tag{color:#167a35;font-weight:600;font-size:13px;letter-spacing:1.5px;margin:0 0 12px}
+.te-why h2{font-size:clamp(24px,3vw,34px);line-height:1.2;margin:0 0 16px;font-weight:700}
+.te-why p{line-height:1.7;margin:0 0 10px}
+.te-why .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.te-why .c{background:#fff;border:1px solid #dfeee2;border-radius:12px;padding:22px 18px;transition:.35s;position:relative;overflow:hidden;animation:te-w-up .7s both}
+.te-why .c:nth-child(2n){animation-delay:.12s}.te-why .c:nth-child(3n){animation-delay:.24s}
+.te-why .c:before{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:#167a35;transition:.4s}
+.te-why .c:hover{transform:translateY(-6px);box-shadow:0 16px 30px rgba(22,122,53,.16)}
+.te-why .c:hover:before{width:100%}
+.te-why .c img{width:38px;height:38px;margin-bottom:12px;transition:.4s}
+.te-why .c:hover img{transform:scale(1.18)}
+.te-why .c h4{font-size:15px;margin:0 0 6px;font-weight:600}
+.te-why .c span{font-size:13px;color:#5b6b60;line-height:1.5;display:block}
+@keyframes te-w-up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@media(max-width:1000px){.te-why .in{grid-template-columns:1fr}.te-why .grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.te-why .grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.te-why *{animation:none!important}}
+.te-why .c{border-radius:16px}
+.te-why .c img{width:50px;height:50px;padding:11px;background:#eaf6ed;border-radius:14px}
+.te-why .tag{display:inline-flex;align-items:center;background:#e7f5ea;color:#167a35;padding:6px 14px;border-radius:30px}
+.te-why h2{letter-spacing:-.5px;color:#0d2b17}
+.te-why .tag,.te-why h2,.te-why .sub{animation:te-why-rv .8s both}
+.te-why h2{animation-delay:.1s}.te-why .sub{animation-delay:.2s}
+@keyframes te-why-rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.te-why:not(.te-in) *{animation-play-state:paused!important}
+</style>
+<div class="in">
+  <div>
+    <p class="tag">WHY TARGET ELEVATION</p>
+    <h2>We Don’t Just Execute. We Think About the Growth Behind It.</h2>
+    <p>A campaign can generate clicks.<br>A website can generate enquiries.<br>A brand can generate attention.</p>
+    <p>But real growth happens when everything works toward the same business objective.</p>
+    <p><b>That’s where we come in.</b></p>
+  </div>
+  <div class="grid">
+    <div class="c"><img src="https://api.iconify.design/lucide/target.svg?color=%23167a35" width="38" height="38" alt=""><h4>Strategy First</h4><span>We Start With the Business, Not the Platform.</span></div>
+    <div class="c"><img src="https://api.iconify.design/lucide/puzzle.svg?color=%23167a35" width="38" height="38" alt=""><h4>One Connected Approach</h4><span>Marketing, Branding &amp; Sales Under One System.</span></div>
+    <div class="c"><img src="https://api.iconify.design/lucide/users.svg?color=%23167a35" width="38" height="38" alt=""><h4>Built Around Your Audience</h4><span>Reach the People Who Actually Matter.</span></div>
+    <div class="c"><img src="https://api.iconify.design/lucide/cpu.svg?color=%23167a35" width="38" height="38" alt=""><h4>Technology That Works for You</h4><span>Use AI &amp; Automation to Work Smarter.</span></div>
+    <div class="c"><img src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23167a35" width="38" height="38" alt=""><h4>Focused on Outcomes</h4><span>Vanity Metrics Don’t Pay the Bills.</span></div>
+    <div class="c"><img src="https://api.iconify.design/lucide/sprout.svg?color=%23167a35" width="38" height="38" alt=""><h4>Built to Grow</h4><span>Don’t Build Something You’ll Outgrow.</span></div>
+  </div>
+</div>
+<script>(function(){var s=document.currentScript.parentElement;if(!('IntersectionObserver' in window)){s.classList.add('te-in');return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add('te-in');o.disconnect()}})},{threshold:.12}).observe(s)})();</script>
+</section>
+
+<!-- ===================== 4. WHAT WE DO ===================== -->
+<section class="te-cap">
+<style>
+.te-cap{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;background:#fff;padding:60px 5%;box-sizing:border-box;text-align:center}
+.te-cap *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te-cap .tag{color:#167a35;font-weight:600;font-size:13px;letter-spacing:1.5px;margin:0 0 8px}
+.te-cap h2{font-size:clamp(24px,3vw,34px);margin:0 0 12px;font-weight:700}
+.te-cap .sub{max-width:760px;margin:0 auto 34px;line-height:1.7;color:#3d4f43}
+.te-cap .grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left}
+.te-cap .c{background:#fff;border:1px solid #dfeee2;border-radius:14px;padding:22px;position:relative;overflow:hidden;min-height:330px;transition:.4s;animation:te-c-up .8s both}
+.te-cap .c:nth-child(3n+2){animation-delay:.12s}.te-cap .c:nth-child(3n){animation-delay:.24s}
+.te-cap .c:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(22,122,53,.18);border-color:#167a35}
+.te-cap .hd{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}
+.te-cap .hd img{width:42px;height:42px;flex:none;transition:.4s}
+.te-cap .c:hover .hd img{transform:rotate(-8deg) scale(1.15)}
+.te-cap h3{font-size:16px;margin:0 0 2px;font-weight:600}
+.te-cap .hd b{font-size:13px;font-weight:500;display:block;line-height:1.4}
+.te-cap .desc{font-size:13px;color:#4a5a50;line-height:1.6;margin:0 0 12px;max-width:62%}
+.te-cap h5{font-size:13px;margin:0 0 8px;font-weight:600}
+.te-cap ul{list-style:none;margin:0;padding:0}
+.te-cap li{font-size:13px;margin-bottom:6px;display:flex;gap:8px;align-items:center}
+.te-cap li img{width:14px;height:14px}
+.te-cap .pic{position:absolute;right:14px;bottom:14px;width:42%;max-height:55%;object-fit:cover;border-radius:10px;box-shadow:0 10px 24px rgba(0,0,0,.18);transition:.5s;animation:te-c-float 6s ease-in-out infinite}
+.te-cap .c:hover .pic{transform:scale(1.07) rotate(-2deg)}
+.te-cap .btn{display:inline-block;margin-top:30px;background:#167a35;color:#fff;padding:14px 28px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;transition:.3s;box-shadow:0 8px 22px rgba(22,122,53,.3)}
+.te-cap .btn:hover{background:#0f5a28;transform:translateY(-3px)}
+@keyframes te-c-up{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+@keyframes te-c-float{50%{transform:translateY(-8px)}}
+@media(max-width:1000px){.te-cap .grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.te-cap .grid{grid-template-columns:1fr}.te-cap .desc{max-width:100%}.te-cap .pic{position:static;width:100%;margin-top:12px;max-height:160px}}
+@media(prefers-reduced-motion:reduce){.te-cap *{animation:none!important}}
+.te-cap .c{border-radius:18px;box-shadow:0 4px 20px rgba(13,43,23,.06);border-color:#e3efe6}
+.te-cap .c:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,#167a35,#7bd18f)}
+.te-cap .hd img{width:48px;height:48px;padding:9px;background:#f1f8f3;border-radius:14px}
+.te-cap .btn{background:linear-gradient(135deg,#1a9040,#0f5a28)}
+.te-cap .tag{display:inline-flex;align-items:center;background:#e7f5ea;color:#167a35;padding:6px 14px;border-radius:30px}
+.te-cap h2{letter-spacing:-.5px;color:#0d2b17}
+.te-cap .tag,.te-cap h2,.te-cap .sub{animation:te-cap-rv .8s both}
+.te-cap h2{animation-delay:.1s}.te-cap .sub{animation-delay:.2s}
+@keyframes te-cap-rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.te-cap:not(.te-in) *{animation-play-state:paused!important}
+</style>
+<p class="tag">WHAT WE DO</p>
+<h2>The Digital Capabilities Behind Your Growth.</h2>
+<p class="sub">From attracting your next customer to building the systems that help you convert and retain opportunities, we bring the essential pieces of digital growth together.</p>
+<div class="grid">
+  <div class="c">
+    <div class="hd"><img src="https://api.iconify.design/logos/google-ads.svg" width="42" height="42" alt=""><div><h3>Google Ads</h3><b>Get Found When Your Customers Are Searching.</b></div></div>
+    <p class="desc">Reach high-intent customers at the exact moment they’re looking for what your business offers.</p>
+    <h5>What we do:</h5>
+    <ul><li><img src="https://api.iconify.design/lucide/search.svg?color=%23167a35" alt="">Search Campaigns</li><li><img src="https://api.iconify.design/lucide/zap.svg?color=%23167a35" alt="">Performance Max</li><li><img src="https://api.iconify.design/lucide/layout-grid.svg?color=%23167a35" alt="">Display Campaigns</li><li><img src="https://api.iconify.design/lucide/repeat.svg?color=%23167a35" alt="">Remarketing</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Conversion Tracking</li><li><img src="https://api.iconify.design/lucide/trending-up.svg?color=%23167a35" alt="">Campaign Optimization</li></ul>
+    <img class="pic" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" width="400" height="300" alt="Google Ads screenshot">
+  </div>
+  <div class="c">
+    <div class="hd"><img src="https://api.iconify.design/logos/meta-icon.svg" width="42" height="42" alt=""><div><h3>Meta Ads</h3><b>Turn Attention Into Action.</b></div></div>
+    <p class="desc">Reach the right audiences across Facebook and Instagram with creative campaigns designed to generate demand, enquiries and sales.</p>
+    <h5>What we do:</h5>
+    <ul><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Lead Generation</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Conversion Campaigns</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Retargeting</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Audience Strategy</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Creative Strategy</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Campaign Optimization</li></ul>
+    <img class="pic" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&h=500&fit=crop" width="400" height="500" alt="Social media on phone">
+  </div>
+  <div class="c">
+    <div class="hd"><img src="https://api.iconify.design/lucide/monitor.svg?color=%232563eb" width="42" height="42" alt=""><div><h3>Website Development</h3><b>Build a Website That Works as a Growth Asset.</b></div></div>
+    <p class="desc">We create modern, responsive and conversion-focused websites that don’t just look good — they move visitors toward action.</p>
+    <h5>What we do:</h5>
+    <ul><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Business Websites</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Landing Pages</li><li><img src="https://api.iconify.design/lucide/shopping-cart.svg?color=%23167a35" alt="">E-commerce Websites</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Conversion-Focused Design</li><li><img src="https://api.iconify.design/lucide/smartphone.svg?color=%23167a35" alt="">Mobile Optimization</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Website Strategy</li></ul>
+    <img class="pic" src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400&h=300&fit=crop" width="400" height="300" alt="Website on laptop and phone">
+  </div>
+  <div class="c">
+    <div class="hd"><img src="https://api.iconify.design/lucide/pen-line.svg?color=%232563eb" width="42" height="42" alt=""><div><h3>Branding</h3><b>Make Your Business Recognizable.</b></div></div>
+    <p class="desc">Build a brand that communicates who you are, what you stand for and why customers should choose you.</p>
+    <h5>What we do:</h5>
+    <ul><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Brand Identity</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Logo Design</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Visual Identity</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Brand Guidelines</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Marketing Creatives</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Brand Communication</li></ul>
+    <img class="pic" src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=400&h=300&fit=crop" width="400" height="300" alt="Branding stationery mockup">
+  </div>
+  <div class="c">
+    <div class="hd"><img src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%232563eb" width="42" height="42" alt=""><div><h3>Sales System Building</h3><b>Turn More Opportunities Into Customers.</b></div></div>
+    <p class="desc">Build a structured sales journey that helps your business manage, qualify, follow up and convert leads more effectively.</p>
+    <h5>What we do:</h5>
+    <ul><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Lead Funnels</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">CRM Systems</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Lead Qualification</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Follow-Up Systems</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Sales Process Design</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Conversion Optimization</li></ul>
+    <img class="pic" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" width="400" height="300" alt="CRM dashboard">
+  </div>
+  <div class="c">
+    <div class="hd"><img src="https://api.iconify.design/lucide/bot.svg?color=%232563eb" width="42" height="42" alt=""><div><h3>AI &amp; Automation</h3><b>Automate the Work. Accelerate the Growth.</b></div></div>
+    <p class="desc">Use AI and automation to eliminate repetitive tasks, improve response times and create smarter business workflows.</p>
+    <h5>What we do:</h5>
+    <ul><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">AI Workflows</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Lead Automation</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Marketing Automation</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Follow-Up Automation</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">Business Process Automation</li><li><img src="https://api.iconify.design/lucide/check-circle.svg?color=%23167a35" alt="">AI-Powered Systems</li></ul>
+    <img class="pic" src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=400&fit=crop" width="400" height="400" alt="AI robot">
+  </div>
+</div>
+<a class="btn" href="#">Explore all our Services →</a>
+<script>(function(){var s=document.currentScript.parentElement;if(!('IntersectionObserver' in window)){s.classList.add('te-in');return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add('te-in');o.disconnect()}})},{threshold:.12}).observe(s)})();</script>
+</section>
+
+<!-- ===================== 5. HOW WE WORK ===================== -->
+<section class="te-work">
+<style>
+.te-work{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;background:linear-gradient(#fff,#f4faf5);padding:60px 5%;box-sizing:border-box;text-align:center}
+.te-work *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te-work .tag{color:#167a35;font-weight:600;font-size:13px;letter-spacing:1.5px;margin:0 0 8px}
+.te-work h2{font-size:clamp(24px,3vw,34px);margin:0 0 12px;font-weight:700}
+.te-work .sub{max-width:700px;margin:0 auto 32px;line-height:1.7;color:#3d4f43}
+.te-work .row{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:26px}
+.te-work .s{background:#fff;border:1px solid #dfeee2;border-radius:12px;padding:18px 14px;display:flex;gap:12px;align-items:center;text-align:left;position:relative;transition:.35s;animation:te-k-up .7s both}
+.te-work .s:nth-child(2){animation-delay:.12s}.te-work .s:nth-child(3){animation-delay:.24s}.te-work .s:nth-child(4){animation-delay:.36s}.te-work .s:nth-child(5){animation-delay:.48s}
+.te-work .s:hover{transform:translateY(-7px);box-shadow:0 16px 30px rgba(22,122,53,.18);border-color:#167a35}
+.te-work .s img{width:36px;height:36px;flex:none;transition:.4s}
+.te-work .s:hover img{transform:rotate(12deg) scale(1.15)}
+.te-work .s b{font-size:13px;display:block;font-weight:600}
+.te-work .s span{font-size:13px;color:#5b6b60;line-height:1.4}
+.te-work .s:not(:last-child):after{content:"→";position:absolute;right:-20px;top:50%;transform:translateY(-50%);color:#167a35;animation:te-k-nudge 1.6s infinite}
+@keyframes te-k-up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes te-k-nudge{50%{transform:translate(5px,-50%)}}
+@media(max-width:1000px){.te-work .row{grid-template-columns:repeat(2,1fr)}.te-work .s:after{display:none}}
+@media(max-width:560px){.te-work .row{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.te-work *{animation:none!important}}
+.te-work .s{border-radius:16px}
+.te-work .s img{width:48px;height:48px;padding:10px;background:#eaf6ed;border-radius:14px}
+.te-work .tag{display:inline-flex;align-items:center;background:#e7f5ea;color:#167a35;padding:6px 14px;border-radius:30px}
+.te-work h2{letter-spacing:-.5px;color:#0d2b17}
+.te-work .tag,.te-work h2,.te-work .sub{animation:te-work-rv .8s both}
+.te-work h2{animation-delay:.1s}.te-work .sub{animation-delay:.2s}
+@keyframes te-work-rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.te-work:not(.te-in) *{animation-play-state:paused!important}
+</style>
+<p class="tag">HOW WE WORK</p>
+<h2>From Business Challenge to Growth System.</h2>
+<p class="sub">We don’t jump straight into execution. We first understand where you are, identify where you want to go and then build the right system to get you there.</p>
+<div class="row">
+  <div class="s"><img src="https://api.iconify.design/lucide/search.svg?color=%23167a35" width="36" height="36" alt=""><div><b>01. DISCOVER</b><span>Understand the Business.</span></div></div>
+  <div class="s"><img src="https://api.iconify.design/lucide/file-text.svg?color=%23167a35" width="36" height="36" alt=""><div><b>02. STRATEGIZE</b><span>Find the Right Growth Path.</span></div></div>
+  <div class="s"><img src="https://api.iconify.design/lucide/settings.svg?color=%23167a35" width="36" height="36" alt=""><div><b>03. BUILD</b><span>Turn Strategy Into Infrastructure.</span></div></div>
+  <div class="s"><img src="https://api.iconify.design/lucide/rocket.svg?color=%23167a35" width="36" height="36" alt=""><div><b>04. LAUNCH</b><span>Put the System Into Motion.</span></div></div>
+  <div class="s"><img src="https://api.iconify.design/lucide/bar-chart-3.svg?color=%23167a35" width="36" height="36" alt=""><div><b>05. OPTIMIZE</b><span>Learn. Improve. Scale.</span></div></div>
+</div>
+<script>(function(){var s=document.currentScript.parentElement;if(!('IntersectionObserver' in window)){s.classList.add('te-in');return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add('te-in');o.disconnect()}})},{threshold:.12}).observe(s)})();</script>
+</section>
+
+<!-- ===================== 6. OUR CLIENTS (auto slider) ===================== -->
+<section class="te-cli">
+<style>
+.te-cli{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;background:#fff;padding:56px 0 24px;box-sizing:border-box}
+.te-cli *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te-cli .in{max-width:1200px;margin:auto;padding:0 5%}
+.te-cli .tag{font-weight:600;font-size:13px;letter-spacing:1.5px;margin:0 0 10px}
+.te-cli h2{font-size:clamp(22px,2.6vw,30px);margin:0 0 6px;font-weight:700}
+.te-cli .sub{margin:0 0 26px;color:#3d4f43;font-size:15px}
+.te-cli .mq{overflow:hidden;padding:12px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.te-cli .tr{display:flex;width:max-content;animation:te-cli-slide 32s linear infinite}
+.te-cli .mq:hover .tr{animation-play-state:paused}
+/* Each logo = link. Change href and the img src (width 170 x height 60 recommended) */
+.te-cli .l{flex:none;width:190px;height:78px;margin-right:16px;background:#fff;border:1px solid #e3efe6;border-radius:14px;display:flex;align-items:center;justify-content:center;padding:8px;box-shadow:0 4px 16px rgba(13,43,23,.06);transition:.35s}
+.te-cli .l:hover{transform:translateY(-6px);box-shadow:0 16px 30px rgba(22,122,53,.2);border-color:#167a35}
+.te-cli .l img{max-width:100%;max-height:100%;object-fit:contain}
+@keyframes te-cli-slide{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.te-cli .mq{overflow-x:auto}}
+
+.te-cli .tag{display:inline-flex;align-items:center;background:#e7f5ea;color:#167a35;padding:6px 14px;border-radius:30px}
+.te-cli h2{letter-spacing:-.5px;color:#0d2b17}
+.te-cli .tag,.te-cli h2,.te-cli .sub{animation:te-cli-rv .8s both}
+.te-cli h2{animation-delay:.1s}.te-cli .sub{animation-delay:.2s}
+@keyframes te-cli-rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.te-cli:not(.te-in) *{animation-play-state:paused!important}
+.te-cli .l.dk{background:linear-gradient(135deg,#0d3d1c,#167a35);border-color:#0d3d1c}
+.te-cli .l.dk:hover{box-shadow:0 16px 30px rgba(13,61,28,.4)}
+</style>
+<div class="in">
+  <p class="tag">OUR CLIENTS</p>
+  <h2>Built for Businesses. Designed for Growth.</h2>
+  <p class="sub">Trusted by businesses across different industries.</p>
+</div>
+<div class="mq"><div class="tr" style="animation-duration:70s"><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-73.png" width="170" height="60" loading="lazy" alt="Client logo 01"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-75.png" width="170" height="60" loading="lazy" alt="Client logo 02"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-84.png" width="170" height="60" loading="lazy" alt="Client logo 03"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/brainobrain_300px_per_cm.png" width="170" height="60" loading="lazy" alt="Client logo 04"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-72.png" width="170" height="60" loading="lazy" alt="Client logo 05"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-93.png" width="170" height="60" loading="lazy" alt="Client logo 06"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-94.png" width="170" height="60" loading="lazy" alt="Client logo 07"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-98.png" width="170" height="60" loading="lazy" alt="Client logo 08"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/Untitled-1-1.png" width="170" height="60" loading="lazy" alt="Client logo 09"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-91.png" width="170" height="60" loading="lazy" alt="Client logo 10"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-92.png" width="170" height="60" loading="lazy" alt="Client logo 11"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-89.png" width="170" height="60" loading="lazy" alt="Client logo 12"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-97.png" width="170" height="60" loading="lazy" alt="Client logo 13"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-99.png" width="170" height="60" loading="lazy" alt="Client logo 14"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-96.png" width="170" height="60" loading="lazy" alt="Client logo 15"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-95.png" width="170" height="60" loading="lazy" alt="Client logo 16"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/10/Agasthya-School-Logo.png" width="170" height="60" loading="lazy" alt="Client logo 17"></a><a class="l dk" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-2026-08-21T203912.610.png" width="170" height="60" loading="lazy" alt="Client logo 18"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-2026-08-21T203940.951.png" width="170" height="60" loading="lazy" alt="Client logo 19"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-100.png" width="170" height="60" loading="lazy" alt="Client logo 20"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-2026-08-21T204024.041.png" width="170" height="60" loading="lazy" alt="Client logo 21"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-73.png" width="170" height="60" loading="lazy" alt="Client logo 01"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-75.png" width="170" height="60" loading="lazy" alt="Client logo 02"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-84.png" width="170" height="60" loading="lazy" alt="Client logo 03"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/brainobrain_300px_per_cm.png" width="170" height="60" loading="lazy" alt="Client logo 04"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-72.png" width="170" height="60" loading="lazy" alt="Client logo 05"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-93.png" width="170" height="60" loading="lazy" alt="Client logo 06"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-94.png" width="170" height="60" loading="lazy" alt="Client logo 07"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-98.png" width="170" height="60" loading="lazy" alt="Client logo 08"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/Untitled-1-1.png" width="170" height="60" loading="lazy" alt="Client logo 09"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-91.png" width="170" height="60" loading="lazy" alt="Client logo 10"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-92.png" width="170" height="60" loading="lazy" alt="Client logo 11"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-89.png" width="170" height="60" loading="lazy" alt="Client logo 12"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-97.png" width="170" height="60" loading="lazy" alt="Client logo 13"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-99.png" width="170" height="60" loading="lazy" alt="Client logo 14"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-96.png" width="170" height="60" loading="lazy" alt="Client logo 15"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-95.png" width="170" height="60" loading="lazy" alt="Client logo 16"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/10/Agasthya-School-Logo.png" width="170" height="60" loading="lazy" alt="Client logo 17"></a><a class="l dk" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-2026-08-21T203912.610.png" width="170" height="60" loading="lazy" alt="Client logo 18"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-2026-08-21T203940.951.png" width="170" height="60" loading="lazy" alt="Client logo 19"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-100.png" width="170" height="60" loading="lazy" alt="Client logo 20"></a><a class="l" href="#"><img src="https://leadfunnelmedia.com/wp-content/uploads/2026/08/image-Photoroom-2026-08-21T204024.041.png" width="170" height="60" loading="lazy" alt="Client logo 21"></a></div></div>
+<script>(function(){var s=document.currentScript.parentElement;if(!('IntersectionObserver' in window)){s.classList.add('te-in');return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add('te-in');o.disconnect()}})},{threshold:.12}).observe(s)})();</script>
+<script>/* Auto: mostly-white logos get a dark card. Force manually by adding class "dk" to <a class="l"> */(function(){var s=document.currentScript.parentElement;s.querySelectorAll(".l img").forEach(function(im){var t=new Image();t.crossOrigin="anonymous";t.onload=function(){try{var w=40,h=Math.max(1,Math.round(w*t.naturalHeight/t.naturalWidth)),c=document.createElement("canvas");c.width=w;c.height=h;var x=c.getContext("2d");x.drawImage(t,0,0,w,h);var d=x.getImageData(0,0,w,h).data,n=0,lt=0,tr=0,p=d.length/4;for(var i=0;i<d.length;i+=4){if(d[i+3]<40){tr++}else{n++;if(d[i]*.299+d[i+1]*.587+d[i+2]*.114>215)lt++}}if(tr/p>.05&&n>15&&lt/n>.45)im.parentNode.classList.add("dk")}catch(e){}};t.src=im.src})})();</script>
+</section>
+
+<!-- ===================== 7. WHO WE HELP (auto slider) ===================== -->
+<section class="te-ind">
+<style>
+.te-ind{font-family:'Poppins',sans-serif;font-size:15px;color:#1b2b20;background:#fff;padding:20px 0 60px;box-sizing:border-box}
+.te-ind *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te-ind .in{max-width:1200px;margin:auto;padding:0 5%}
+.te-ind .tag{font-weight:600;font-size:13px;letter-spacing:1.5px;margin:0 0 10px}
+.te-ind h2{font-size:clamp(22px,2.6vw,30px);margin:0 0 22px;font-weight:700}
+.te-ind .mq{overflow:hidden;padding:8px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.te-ind .tr{display:flex;width:max-content;animation:te-ind-slide 38s linear infinite}
+.te-ind .tr.rev{animation-direction:reverse;animation-duration:44s}
+.te-ind .mq:hover .tr{animation-play-state:paused}
+.te-ind .i{flex:none;display:flex;align-items:center;gap:12px;margin-right:14px;background:#fff;border:1px solid #e3efe6;border-radius:14px;padding:14px 22px;font-size:14px;font-weight:500;color:#1b2b20;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(13,43,23,.05);transition:.35s}
+.te-ind .i img{width:36px;height:36px;padding:8px;background:#eaf6ed;border-radius:10px;transition:.35s}
+.te-ind .i:hover{transform:translateY(-5px);background:#167a35;color:#fff;box-shadow:0 14px 26px rgba(22,122,53,.28)}
+.te-ind .i:hover img{filter:brightness(0) invert(1);background:rgba(255,255,255,.2)}
+@keyframes te-ind-slide{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.te-ind .mq{overflow-x:auto}}
+
+.te-ind .tag{display:inline-flex;align-items:center;background:#e7f5ea;color:#167a35;padding:6px 14px;border-radius:30px}
+.te-ind h2{letter-spacing:-.5px;color:#0d2b17}
+.te-ind .tag,.te-ind h2,.te-ind .sub{animation:te-ind-rv .8s both}
+.te-ind h2{animation-delay:.1s}.te-ind .sub{animation-delay:.2s}
+@keyframes te-ind-rv{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.te-ind:not(.te-in) *{animation-play-state:paused!important}
+</style>
+<div class="in">
+  <p class="tag">WHO WE HELP</p>
+  <h2>Different Industries. One Focus — Growth.</h2>
+</div>
+<div class="mq"><div class="tr"><a class="i" href="#"><img src="https://api.iconify.design/lucide/home.svg?color=%23167a35" width="28" height="28" alt="">Real Estate</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/building-2.svg?color=%23167a35" width="28" height="28" alt="">Hospitality</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/graduation-cap.svg?color=%23167a35" width="28" height="28" alt="">Education</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/heart-pulse.svg?color=%23167a35" width="28" height="28" alt="">Healthcare</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/shopping-cart.svg?color=%23167a35" width="28" height="28" alt="">E-commerce</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/car.svg?color=%23167a35" width="28" height="28" alt="">Automotive</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/party-popper.svg?color=%23167a35" width="28" height="28" alt="">Events &amp; Experiences</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/briefcase.svg?color=%23167a35" width="28" height="28" alt="">Professional Services</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/home.svg?color=%23167a35" width="28" height="28" alt="">Real Estate</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/building-2.svg?color=%23167a35" width="28" height="28" alt="">Hospitality</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/graduation-cap.svg?color=%23167a35" width="28" height="28" alt="">Education</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/heart-pulse.svg?color=%23167a35" width="28" height="28" alt="">Healthcare</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/shopping-cart.svg?color=%23167a35" width="28" height="28" alt="">E-commerce</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/car.svg?color=%23167a35" width="28" height="28" alt="">Automotive</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/party-popper.svg?color=%23167a35" width="28" height="28" alt="">Events &amp; Experiences</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/briefcase.svg?color=%23167a35" width="28" height="28" alt="">Professional Services</a></div></div>
+<div class="mq"><div class="tr rev"><a class="i" href="#"><img src="https://api.iconify.design/lucide/factory.svg?color=%23167a35" width="28" height="28" alt="">Manufacturing</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/hard-hat.svg?color=%23167a35" width="28" height="28" alt="">Construction</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/cpu.svg?color=%23167a35" width="28" height="28" alt="">Technology &amp; SaaS</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/plane.svg?color=%23167a35" width="28" height="28" alt="">Travel &amp; Tourism</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/flower-2.svg?color=%23167a35" width="28" height="28" alt="">Beauty &amp; Wellness</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/utensils.svg?color=%23167a35" width="28" height="28" alt="">Food &amp; Restaurants</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/rocket.svg?color=%23167a35" width="28" height="28" alt="">Startups &amp; Emerging Brands</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/factory.svg?color=%23167a35" width="28" height="28" alt="">Manufacturing</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/hard-hat.svg?color=%23167a35" width="28" height="28" alt="">Construction</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/cpu.svg?color=%23167a35" width="28" height="28" alt="">Technology &amp; SaaS</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/plane.svg?color=%23167a35" width="28" height="28" alt="">Travel &amp; Tourism</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/flower-2.svg?color=%23167a35" width="28" height="28" alt="">Beauty &amp; Wellness</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/utensils.svg?color=%23167a35" width="28" height="28" alt="">Food &amp; Restaurants</a><a class="i" href="#"><img src="https://api.iconify.design/lucide/rocket.svg?color=%23167a35" width="28" height="28" alt="">Startups &amp; Emerging Brands</a></div></div>
+<script>(function(){var s=document.currentScript.parentElement;if(!('IntersectionObserver' in window)){s.classList.add('te-in');return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add('te-in');o.disconnect()}})},{threshold:.12}).observe(s)})();</script>
+</section>
+
+<!-- ===================== 8. CTA BANNER ===================== -->
+<section class="te-cta">
+<style>
+.te-cta{font-family:'Poppins',sans-serif;font-size:15px;color:#fff;position:relative;overflow:hidden;background:#0f4a22;padding:70px 5%;box-sizing:border-box;min-height:230px}
+.te-cta *{box-sizing:border-box;font-family:'Poppins',sans-serif}
+.te-cta .bg{position:absolute;right:0;top:0;width:55%;height:100%;object-fit:cover;opacity:.85;-webkit-mask-image:linear-gradient(90deg,transparent,#000 45%);mask-image:linear-gradient(90deg,transparent,#000 45%);animation:te-t-zoom 14s ease-in-out infinite alternate}
+.te-cta .in{position:relative;max-width:1200px;margin:auto}
+.te-cta .tag{font-weight:600;font-size:13px;letter-spacing:1.5px;margin:0 0 10px;color:#bfe8c8;animation:te-t-up .8s both}
+.te-cta h2{font-size:clamp(24px,3.2vw,36px);line-height:1.25;margin:0 0 22px;font-weight:700;max-width:520px;animation:te-t-up .8s .1s both}
+.te-cta .b{display:inline-block;background:#2ea44f;color:#fff;padding:14px 28px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none;transition:.3s;animation:te-t-up .8s .2s both,te-t-pulse 2.4s 1s infinite}
+.te-cta .b:hover{background:#fff;color:#0f4a22;transform:translateY(-3px)}
+@keyframes te-t-up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes te-t-zoom{to{transform:scale(1.07)}}
+@keyframes te-t-pulse{0%{box-shadow:0 0 0 0 rgba(46,164,79,.6)}70%,100%{box-shadow:0 0 0 16px rgba(46,164,79,0)}}
+@media(max-width:700px){.te-cta .bg{width:100%;opacity:.3}}
+@media(prefers-reduced-motion:reduce){.te-cta *{animation:none!important}}
+.te-cta{background:linear-gradient(120deg,#082f15,#145c2c);padding:90px 5%}
+.te-cta .b{background:linear-gradient(135deg,#34b85a,#1f8a3d)}
+.te-cta h2{color:#fff}
+.te-cta:not(.te-in) *{animation-play-state:paused!important}
+</style>
+<img class="bg" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1100&h=500&fit=crop" width="1100" height="500" alt="Corporate building">
+<div class="in">
+  <p class="tag">READY TO ELEVATE?</p>
+  <h2>Your Next Stage of Growth Starts With the Right System.</h2>
+  <a class="b" href="#">Talk to a Growth Expert →</a>
+</div>
+<script>(function(){var s=document.currentScript.parentElement;if(!('IntersectionObserver' in window)){s.classList.add('te-in');return}new IntersectionObserver(function(e,o){e.forEach(function(x){if(x.isIntersecting){s.classList.add('te-in');o.disconnect()}})},{threshold:.12}).observe(s)})();</script>
+</section>
